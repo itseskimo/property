@@ -1,0 +1,310 @@
+.heading{
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+
+.subHeading h1{
+margin-bottom: 40px;
+font-weight: 600;
+font-size: 32px;
+color: #082346;
+line-height: 48px;
+}
+
+.heading2{
+    font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+    }
+
+
+.offerImage{
+height: 200px;
+width: 200px;
+border-radius: 12px;
+}
+
+.offerDetails{
+display: flex;
+}
+
+
+.offerProperties{
+margin-left: 40px;
+line-height: 3px;
+margin-top: -13px;
+}
+
+.properties1{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: -19px;
+    color: #121212;
+    }
+
+.lineHeight{
+    color: #484848;
+    margin-bottom: 5px;
+    font-weight: 500;
+font-size: 16px;
+
+}
+
+.lineHeight1{
+    font-weight: 600;
+    font-size: 16px;
+   
+    color: #000000;
+}
+
+.subHeading{
+    font-weight: 600;
+font-size: 16px;
+
+color: #484848;
+}
+
+.offerVerify{
+    color: #42A54C;
+    margin-left: 5px;
+}
+
+/* ------------------------------- */
+.offerInput1{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    }
+
+.offerInput1 h5{
+    padding-right: 150px;
+    }
+
+.offerSub1{
+        margin-right: 104px;
+    }
+/* ------------------------------------ */
+
+.offerInput2{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    }
+    
+.offerInput2 h5{
+    padding-right: 150px;
+    }
+
+.linegap1{
+    margin-right: 80px;
+    }
+
+.linegap2{
+    margin-right: 117px;
+    }
+/* ------------------------------------------ */
+
+.thirdInput{
+    position: absolute;
+    left: 320px;
+    height: 30px;
+    width: 83px;
+    font-size: 15px;
+    }
+
+.offerSub4{
+    margin-right: 60px;
+    }
+ 
+/*--------------------------------------------- */
+.offerInput{
+margin-top: 40px;
+display: flex;
+align-items: center;
+position: relative;
+}
+
+.offerInput h5{
+padding-right: 150px;
+}
+
+
+.firstInput{
+    margin-right: 50px;
+    height: 30px;
+    position: absolute;
+    left: 240px;
+    font-size: 15px;
+}
+
+.secondInput{
+position: absolute;
+left: 480px;
+height: 30px;
+font-size: 15px;
+}
+
+.firstSelect{
+    margin-right: 50px;
+    height: 35px;
+    position: absolute;
+    left: 240px;
+}
+
+
+.secondSelect{
+    position: absolute;
+    left: 480px;
+    height: 35px; 
+}
+
+.thirdSelect{
+    position: absolute;
+    left: 680px;
+    height: 35px; 
+    width: 100px; 
+}
+
+.offerSubheadings{
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: absolute;
+left: 240px;
+bottom: -33px;
+color: #808080;
+}
+
+.offerSub{
+margin-right: 105px;
+    }
+
+.offerBox1{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 119px;
+height: 117px;
+line-height: 3px;
+position: absolute;
+bottom: -153px;
+left: 240px;
+border: 1px solid black;
+border-radius: 12px;
+}
+
+.offerBox2{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 119px;
+height: 117px;
+line-height: 3px;
+position: absolute;
+bottom: -153px;
+left: 400px;
+border: 1px solid black;
+border-radius: 12px;
+}
+
+.offerBox3{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 119px;
+height: 117px;
+line-height: 3px;
+position: absolute;
+bottom: -153px;
+left: 560px;
+border: 1px solid black;
+border-radius: 12px;
+}
+/* ----------------------------------- */
+.inputGap{
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    }
+
+.forthSelect{
+    position: absolute;
+    left: 300px;
+    height: 35px;
+    }
+
+.fifthSelect{
+    position: absolute;
+    left: 360px;
+    height: 35px;
+    }
+
+.offerTitle{
+    position: absolute;
+    left: 480px;
+}
+
+.sixthInput{
+    position: absolute;
+    left: 680px;
+     height: 35px; 
+}
+/* ----------------------------------- */
+.underLine{
+    margin-top: 30px;
+    height: 2px;
+    width: 863px;
+    background-color: black;
+}
+
+.button{
+    width: 863px;
+    margin-top: 45px;
+    margin-bottom:50px;
+display: flex;
+position: relative;
+}
+
+.buttonReset{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #082346;
+border-radius: 12px;
+background: #FFFFFF;
+padding: 16px 24px;
+width: 185px;
+height: 62px;
+color: #082346;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+cursor: pointer;
+}
+
+.buttonContinue{
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #082346;
+    border-radius: 12px;
+    background: #082346;
+    padding: 16px 24px;
+    width: 185px;
+    height: 62px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    }

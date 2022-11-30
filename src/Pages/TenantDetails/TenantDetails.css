@@ -1,0 +1,301 @@
+
+
+
+
+    .header{
+        width: 100%;
+        max-width: 1180px;
+        margin: auto;
+    }
+    
+    
+    .subheader h1{
+    margin-bottom: 20px;
+    }
+    
+    
+    
+    
+    
+    /* ------------------------------- */
+    .offerInput1{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        }
+    
+    .offerInput1 h5{
+        padding-right: 150px;
+        }
+    
+    .offerSub1{
+            margin-right: 104px;
+        }
+    /* ------------------------------------ */
+    
+    .offerInput2{
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        }
+        
+    .offerInput2 h5{
+        padding-right: 150px;
+        }
+    
+    .offerSub2{
+        margin-right: 277px;
+        }
+    
+    .offerSub3{
+        margin-right: 60px;
+        }
+    
+    .offerSub4{
+        margin-right: 577px;
+        }
+    
+        .offerSub5{
+            margin-right: 330px;
+            }
+    /* ------------------------------------------ */
+    
+    .input3{
+        position: absolute;
+        left: 370px;
+        height: 30px;
+        width: 100px;
+        }
+    
+    .offerSub4{
+        margin-right: 60px;
+        }
+     
+    /*--------------------------------------------- */
+    .offerInput{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    }
+    
+    .offerInput h5{
+    padding-right: 150px;
+    }
+    
+    .select1{
+        margin-right: 50px;
+        height: 30px;
+        position: absolute;
+        left: 240px;
+    }
+    
+    .selectHeading{
+        height: 30px;
+        position: absolute;
+        left: 0;
+        bottom: -33px; 
+    }
+    
+    
+    .selectHead{
+        height: 35px;
+        position: absolute;
+        left: 220px;
+        bottom: -33px; 
+    }
+    
+    .selectHeading1{
+        height: 30px;
+        position: absolute;
+        left: 0;
+        bottom: -95px; 
+    }
+    
+    .addmoreHeading{
+        height: 30px;
+        position: absolute;
+        left: 0;
+        bottom: -135px; 
+        color: #082346;
+        font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: inline;
+    }
+    
+    .addmoreHeading1{
+        height: 30px;
+        position: absolute;
+        left: 0;
+        bottom: -65px; 
+        color: #082346;
+        font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    
+    }
+    .selectHeading2{
+        height: 30px;
+        position: absolute;
+        left: 215px;
+        bottom: -95px; 
+    }
+    
+    
+    .select2{
+        margin-right: 50px;
+        height: 30px;
+        position: absolute;
+        left: 320px;
+    }
+    
+    
+    .input1{
+        margin-right: 50px;
+        height: 30px;
+        width: 340px;
+        position: absolute;
+        left: 240px;
+    }
+    
+    
+    .input5{
+        height: 30px;
+        position: absolute;
+        left: 0;
+        bottom: -33px; 
+        width: 340px;
+    }
+    
+    .selectin{
+        position: absolute;
+        left: 440px;
+        height: 35px; 
+        width: 100px;
+        bottom: -33px;  
+    }
+    .selectinn{
+        position: absolute;
+        left: 570px;
+        height: 35px; 
+        width: 100px;
+        bottom: -33px;  
+    }
+    .input2{
+    position: absolute;
+    left: 240px;
+    height: 30px;
+    width: 100px;
+    }
+    
+    .input4{
+        margin-right: 50px;
+        height: 85px;
+        width: 504px;
+        position: absolute;
+        left: 240px;
+        }
+    
+    .select{
+        position: absolute;
+        left: 680px;
+        height: 35px; 
+        width: 100px; 
+    }
+    
+    .offerSubheadings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 240px;
+    bottom: -33px;
+    color: #808080;
+    }
+    
+    
+    .offerInputt{
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        }
+    
+    
+        .offerInputtt{
+            margin-top: 195px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            }
+    
+    /* ----------------------------------- */
+    .underLine{
+        margin-top: 90px;
+        height: 2px;
+        width: 863px;
+        background-color: black;
+    }
+    
+    .button{
+        width: 863px;
+        margin-top: 45px;
+        margin-bottom:50px;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+    }
+    
+    .buttonReset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #082346;
+    border-radius: 12px;
+    background: #FFFFFF;
+    padding: 16px 24px;
+    width: 185px;
+    height: 62px;
+    color: #082346;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    }
+    
+    .buttonMid{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #082346;
+        border-radius: 12px;
+        background: #6D6D6D;
+        padding: 16px 24px;
+        width: 185px;
+        height: 62px;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .buttonContinue{
+        /* position: absolute;
+        right: 0; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #082346;
+        border-radius: 12px;
+        background: #082346;
+        padding: 16px 24px;
+        width: 185px;
+        height: 62px;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        }

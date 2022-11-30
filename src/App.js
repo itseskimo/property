@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import OfferDetails from './Pages/OfferDetails/OfferDetails'
+import RequestDetails from './Pages/RequestDetails/RequestDetails'
+import TenantDetails from './Pages/TenantDetails/TenantDetails'
+import TenantDocumentation from './Pages/TenantDocumentation/TenantDocumentation'
+import Submit from './Pages/Submit/Submit'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <Router>
+        <Routes>
+          <Route path="/" element={<OfferDetails/>} />
+          <Route path="/tenantDetails" element={<TenantDetails/>} />
+          <Route path="/tenantDocumentation" element={<TenantDocumentation/>} />
+          <Route path="/requestDetails" element={<RequestDetails/>} />
+          <Route path="/submit" element={<Submit/>} />
+        </Routes>
+        </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

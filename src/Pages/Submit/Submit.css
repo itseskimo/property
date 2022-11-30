@@ -1,0 +1,144 @@
+.header{
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
+}
+
+
+.subheader h1{
+margin-bottom: 20px;
+}
+/* ------------------------------------ */
+
+.form{
+margin-top: 40px;
+display: flex;
+align-items: center;
+position: relative;
+}
+    
+.form h5{
+padding-right: 150px;
+}
+
+
+
+.offerSub5{
+margin-right: 270px;
+}
+
+/*--------------------------------------------- */
+
+
+
+
+
+
+.formBox{
+    box-sizing: border-box;
+    height: 49px;
+    width: 293px;
+    position: absolute;
+    left: 240px;
+    background: #F1F5F7;
+border-radius: 4px;
+padding: 10px;
+}
+
+.formBox1{
+   display: flex;
+   position: absolute;
+   top: -20px;
+}
+
+
+.select{
+    box-sizing: border-box;
+    position: absolute;
+    left: 620px;
+    height: 44px; 
+    width: 187px;
+    border: 1px solid #082346;
+border-radius: 4px;
+padding: 10px;
+}
+
+.offerSubheadings{
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: absolute;
+left: 240px;
+bottom: -33px;
+color: #808080;
+}
+
+
+
+/* ----------------------------------- */
+.underLine{
+    margin-top: 90px;
+    height: 2px;
+    width: 863px;
+    background-color: black;
+}
+
+.button{
+    width: 863px;
+    margin-top: 45px;
+    margin-bottom:50px;
+display: flex;
+justify-content: space-between;
+/* position: relative; */
+}
+
+.buttonReset{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid #082346;
+border-radius: 12px;
+background: #FFFFFF;
+padding: 16px 24px;
+width: 185px;
+height: 62px;
+color: #082346;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+}
+
+.buttonMid{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #082346;
+    border-radius: 12px;
+    background: #6D6D6D;
+    padding: 16px 24px;
+    width: 185px;
+    height: 62px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.buttonContinue{
+    /* position: absolute;
+    right: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #082346;
+    border-radius: 12px;
+    background: #082346;
+    padding: 16px 24px;
+    width: 185px;
+    height: 62px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    }

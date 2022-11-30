@@ -1,0 +1,259 @@
+.formHeader{
+    height: 60px;
+    width: 100%;
+    max-width: 1180px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1F5F7;
+}
+
+.formProgress{
+    /* padding-top: 20px; */
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.formRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    position: relative;
+    /* width: 200px; */
+}
+
+.formHeading{
+   margin-right: 30px;
+   font-weight: 500;
+   color: #6D6D6D;  
+   cursor: pointer;
+}
+
+.activeWord{
+    font-weight: 600;
+    color: #082346;
+}
+
+.activeCircle{
+    background: #082346;
+    color: white !important;
+}
+
+.active{
+    height: 2.7px !important;  
+  }
+
+
+
+/* .active::after{
+    width: 0;
+    position: absolute;
+    color: #082346; 
+    right: -7px;
+   
+    content: '';
+    height: 3px;
+    width: 37%;
+    background-color: #000000;
+  animation: appear 0.1s linear;
+  }
+  
+  
+  @keyframes appear{
+    from{
+      width: 0;
+    }
+    to{
+      width: 37%;
+    }
+  } */
+
+
+
+.formCircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #082346;
+}
+
+.formUnderline{
+height: 2px;
+width: 60px;
+background-color: #6D6D6D;
+/* position: absolute;
+left: 160px; */
+}
+
+
+@media(max-width:1050px){
+    .formRow{ 
+        gap: 5px;
+    }
+    .formHeading{
+        margin-right: 20px;
+        font-weight: 500;
+        color: #6D6D6D; 
+        
+     }
+  }
+
+  @media(max-width:950px){
+    .formRow{ 
+        gap: 3px;
+    }
+    .formHeading{
+        margin-right: 18px;   
+     }
+     .formUnderline{
+        width: 50px;
+        }
+  }
+
+  @media(max-width:840px){
+    
+    .formHeading{
+        margin-right: 14px;   
+     }
+     .formUnderline{
+        width: 40px;
+        }
+  }
+
+  @media(max-width:790px){
+    .formHeading{
+        margin-right: 12px;   
+     }
+     .formUnderline{
+        width: 32px;
+        }
+  }
+
+  @media(max-width:730px){
+    .formCircle{
+        height: 18px;
+        width: 18px;
+        font-size: 11px; 
+    }
+    .formHeading{
+        margin-right: 10px;   
+     }
+
+     .formUnderline{
+        width: 27px;
+        }
+  }
+
+  @media(max-width:678px){
+    .formCircle{
+        height: 17px;
+        width: 17px;
+        font-size: 10px; 
+    }
+    .formHeading{
+        margin-right: 8px;   
+     }
+
+     .formUnderline{
+        width: 24px;
+        }
+  }
+
+  @media(max-width:678px){
+    .formHeading{
+        margin-right: 8px; 
+        font-size: 13px;
+     }
+
+     .formUnderline{
+        width: 24px;
+        height: 1px;
+        }
+  }
+
+  @media(max-width:678px){
+    
+    .formHeading{
+        margin-right: 6px; 
+     }
+
+     .formUnderline{
+        width: 22px;
+        }
+  }
+
+  @media(max-width:620px){
+    
+    .formHeading{
+        margin-right: 3px; 
+        font-size: 12.7px;
+     }
+
+     .formUnderline{
+        width: 20px;
+        }
+  }
+
+  @media(max-width:580px){
+    
+    .formHeading{
+        margin-right: 1px; 
+        font-size: 12px;
+     }
+
+     .formUnderline{
+        width: 20px;
+        }
+  }
+
+  @media(max-width:548px){
+    
+    .formHeading{
+        margin-right: 0px; 
+        font-size: 11px;
+     }
+
+     .formUnderline{
+        width: 18px;
+        }
+
+        .formHeader{
+            height: 50px;
+        }
+  }
+
+  @media(max-width:511px){
+    
+    .formHeading{ 
+        font-size: 10px;
+     }
+
+     .formUnderline{
+        width: 16px;
+        }
+    .formProgress{
+        padding-top: 1px;
+
+    }
+    .formCircle{
+        height: 12px;
+        width: 8px;
+        font-size: 9px; 
+    }
+  }
+
+  @media(max-width:495px){
+    
+     .formUnderline{
+        width: 14px;
+        }
+    
+  }
