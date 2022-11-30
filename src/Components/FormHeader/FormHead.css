@@ -139,9 +139,9 @@ left: 160px; */
 
   @media(max-width:730px){
     .formCircle{
-        height: 18px;
-        width: 18px;
-        font-size: 11px; 
+        height: 18px !important;
+        width: 18px !important;
+        font-size: 11px !important; 
     }
     .formHeading{
         margin-right: 10px;   
@@ -154,9 +154,9 @@ left: 160px; */
 
   @media(max-width:678px){
     .formCircle{
-        height: 17px;
-        width: 17px;
-        font-size: 10px; 
+        height: 17px !important;
+        width: 17px !important;
+        font-size: 10px !important; 
     }
     .formHeading{
         margin-right: 8px;   
@@ -194,7 +194,7 @@ left: 160px; */
     
     .formHeading{
         margin-right: 3px; 
-        font-size: 12.7px;
+        font-size: 13px;
      }
 
      .formUnderline{
@@ -214,7 +214,7 @@ left: 160px; */
         }
   }
 
-  @media(max-width:548px){
+  @media(max-width:540px){
     
     .formHeading{
         margin-right: 0px; 
@@ -230,7 +230,7 @@ left: 160px; */
         }
   }
 
-  @media(max-width:511px){
+  @media(max-width:495px){
     
     .formHeading{ 
         font-size: 10px;
@@ -244,9 +244,9 @@ left: 160px; */
 
     }
     .formCircle{
-        height: 12px;
-        width: 8px;
-        font-size: 9px; 
+        height: 15px !important;
+        width: 15px !important;
+        font-size: 9px !important; 
     }
   }
 
