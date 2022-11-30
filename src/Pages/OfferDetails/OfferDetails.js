@@ -10,7 +10,7 @@ const OfferDetails = () => {
       navigate(-1);
   };
   
-  
+
   const goForward = () => {
     navigate(1);
   };
@@ -54,43 +54,60 @@ const OfferDetails = () => {
 
 <div className='offerInput1'>
     <h5>Landlord Ask</h5>
-    <input autoFocus className='firstInput'></input>
-    <input className='secondInput'></input>
-    <div className='offerSubheadings'>
-      <h6 className='offerSub1'>Amount Landlord is asking</h6>
-      <h6>Enter your offer in monthly rent</h6>
+    <div className='firstDiv'>
+      <input autoFocus className='firstInput'></input>
+      <h6 className='firstTitle'>Amount Landlord is asking</h6>
+    </div>
+    <div  className='secondDiv'>
+      <input className='secondInput'></input>
+      <h6 className='firstTitle'>Enter your offer in monthly rent</h6>
     </div>
 </div>
 
-<div className='offerInput2'>
+<div className='offerInput1'>
     <h5>Your Offer</h5>
-    <input className='firstInput'></input>
-    <input className='secondInput'></input>
+
+    <div className='firstDiv'>
+      <input className='firstInput'></input>
+      <h6 className='firstTitle'>Enter your offer of monthly rent</h6>
+    </div>
+    <div  className='secondDiv'>
+      <input className='secondInput'></input>
+      <h6 className='firstTitle'>Deposit Offered</h6>
+    </div>
+
+
+    <div className='thirdDiv'>
     <select className='thirdSelect'>
                 <option>Select Term</option>
                 <option>1</option>
                 <option>2</option>
             </select>
-      <div className='offerSubheadings'>
-      <h6 className='linegap1'>Enter your offer of monthly rent</h6>
-      <h6 className='linegap2'>Deposit Offered</h6>
-      <h6>Enter the contract period</h6>
-    </div>
+       <h6 className='firstTitle'>Enter the contract period</h6> 
+      </div>
+      
+    
 </div>
 
-<div className='offerInput'>
+<div className='offerInput1'>
     <h5>Rent Escalation</h5>
+    <div className='firstDiv'>
     <select className='firstSelect'>
       <option>Flat</option>
       <option>1</option>
       <option>2</option>
     </select>
-    <input className='thirdInput'></input>
-    <select className='secondSelect'>
+      <input className='thirdInput'></input>
+    </div>
+    
+    <div className='secondDiv'>
+      <select className='secondSelect'>
       <option>5%</option>
       <option>10%</option>
       <option>12%</option>
     </select>
+    </div>
+    
     <div className='offerSubheadings'>
       <h6 className='offerSub4'>Choose a value to showcase amount</h6>
       <h6>Enter your offer in monthly rent</h6>

@@ -73,18 +73,21 @@ color: #484848;
 
 /* ------------------------------- */
 .offerInput1{
-    margin-top: 40px;
+    margin-top: 40px !important;
     display: flex;
     align-items: center;
     position: relative;
+    /* width: 863px;
+    height: 100px; */
     }
 
 .offerInput1 h5{
     padding-right: 150px;
     }
 
-.offerSub1{
-        margin-right: 104px;
+.firstTitle{
+        position: absolute;
+        bottom: -13px;
     }
 /* ------------------------------------ */
 
@@ -108,13 +111,7 @@ color: #484848;
     }
 /* ------------------------------------------ */
 
-.thirdInput{
-    position: absolute;
-    left: 320px;
-    height: 30px;
-    width: 83px;
-    font-size: 15px;
-    }
+
 
 .offerSub4{
     margin-right: 60px;
@@ -132,42 +129,59 @@ position: relative;
 padding-right: 150px;
 }
 
-
-.firstInput{
-    margin-right: 50px;
-    height: 30px;
+.firstDiv{
     position: absolute;
-    left: 240px;
+    left: 240px;    
+}
+
+.secondDiv{
+    position: absolute;
+    left: 480px;    
+}
+
+.thirdDiv{
+    position: absolute;
+    left: 680px;   
+}
+
+.firstInput{  
+    height: 30px;  
     font-size: 15px;
 }
 
 .secondInput{
-position: absolute;
-left: 480px;
 height: 30px;
 font-size: 15px;
 }
 
-.firstSelect{
-    margin-right: 50px;
-    height: 35px;
-    position: absolute;
-    left: 240px;
-}
+.thirdInput{
+    width: 93px;
+    height: 30px;
+    font-size: 15px;
+    }
 
-
-.secondSelect{
+.firstTitle{
+    color: #808080;
     position: absolute;
-    left: 480px;
-    height: 35px; 
+    bottom: -40px;
+  
 }
 
 .thirdSelect{
-    position: absolute;
-    left: 680px;
     height: 35px; 
-    width: 100px; 
+    width: 127px;  
 }
+
+.firstSelect{
+    margin-right: 30px;
+    height: 36px;
+}
+
+.secondSelect{
+    height: 35px; 
+}
+
+
 
 .offerSubheadings{
 display: flex;
