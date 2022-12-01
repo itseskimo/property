@@ -89,7 +89,7 @@ const TenantDetailsFirm = () => {
 
 
 
-<div className='rowGap'>
+<div className='offerInputt'>
    <h5>Reason for Rent</h5>
    <input className='input4'></input>
 </div>
