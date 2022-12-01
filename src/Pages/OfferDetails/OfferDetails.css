@@ -85,13 +85,13 @@ color: #484848;
     padding-right: 150px;
     }
 
-.firstTitle{
+/* .firstTitle{
         position: absolute;
         bottom: -13px;
-    }
+    } */
 /* ------------------------------------ */
 
-.offerInput2{
+/* .offerInput2{
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -108,14 +108,14 @@ color: #484848;
 
 .linegap2{
     margin-right: 117px;
-    }
+    } */
 /* ------------------------------------------ */
 
 
-
+/* 
 .offerSub4{
     margin-right: 60px;
-    }
+    } */
  
 /*--------------------------------------------- */
 .offerInput{
@@ -129,33 +129,40 @@ position: relative;
 padding-right: 150px;
 }
 
-.firstDiv{
+.firstDiv1{
     position: absolute;
     left: 240px;    
 }
 
-.secondDiv{
+.secondDiv1{
     position: absolute;
-    left: 480px;    
+    left: 455px;    
 }
 
-.thirdDiv{
+.thirdDiv1{
     position: absolute;
-    left: 680px;   
+    left: 670px;   
+}
+.forthDiv1{
+    position: absolute;
+    left: 495px;  
 }
 
-.firstInput{  
+
+
+
+.firstInput1{  
     height: 30px;  
     font-size: 15px;
 }
 
-.secondInput{
+.secondInput1{
 height: 30px;
 font-size: 15px;
 }
 
-.thirdInput{
-    width: 93px;
+.thirdInput1{
+    width: 83px;
     height: 30px;
     font-size: 15px;
     }
@@ -164,7 +171,7 @@ font-size: 15px;
     color: #808080;
     position: absolute;
     bottom: -40px;
-  
+  white-space: nowrap;
 }
 
 .thirdSelect{
@@ -173,17 +180,43 @@ font-size: 15px;
 }
 
 .firstSelect{
-    margin-right: 30px;
+    margin-right: 25px;
     height: 36px;
 }
 
+.firstSelect1{
+    margin-right: 30px;
+    height: 36px;
+    position: absolute;
+    left: 240px;
+    width: 57px;
+}
+
+.firstSelet1{
+    margin-right: 30px;
+    height: 36px;
+    position: absolute;
+    left: 240px;
+    width: 120px;
+}
+
+.thirdSelect1{
+    height: 35px; 
+    width: 120px;
+    position: absolute;
+    left: 760px;  
+}
 .secondSelect{
     height: 35px; 
 }
 
 
-
-.offerSubheadings{
+.calendar{
+position: absolute;
+left: 240px;
+bottom: 555;
+}
+/* .offerSubheadings{
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -191,11 +224,11 @@ position: absolute;
 left: 240px;
 bottom: -33px;
 color: #808080;
-}
+} */
 
-.offerSub{
+/* .offerSub{
 margin-right: 105px;
-    }
+    } */
 
 .offerBox1{
 display: flex;
@@ -222,7 +255,7 @@ height: 117px;
 line-height: 3px;
 position: absolute;
 bottom: -153px;
-left: 400px;
+left: 385px;
 border: 1px solid black;
 border-radius: 12px;
 }
@@ -237,7 +270,7 @@ height: 117px;
 line-height: 3px;
 position: absolute;
 bottom: -153px;
-left: 560px;
+left: 530px;
 border: 1px solid black;
 border-radius: 12px;
 }
@@ -251,25 +284,29 @@ border-radius: 12px;
 
 .forthSelect{
     position: absolute;
-    left: 300px;
+    left: 310px;
     height: 35px;
+    width: 57px;
     }
 
 .fifthSelect{
     position: absolute;
-    left: 360px;
+    left: 380px;
     height: 35px;
+    width: 67px;
     }
 
 .offerTitle{
     position: absolute;
-    left: 480px;
+    left: 660px;
+    white-space: nowrap;
 }
 
 .sixthInput{
     position: absolute;
-    left: 680px;
+    left: 790px;
      height: 35px; 
+     width: 57px;
 }
 /* ----------------------------------- */
 .underLine{

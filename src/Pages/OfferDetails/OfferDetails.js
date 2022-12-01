@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './OfferDetails.css'
 import { useNavigate } from "react-router-dom";
+import { Calendar } from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 //import OfferTerm from '../../Constants/OfferTerm'
 const OfferDetails = () => {
   const navigate = useNavigate();
@@ -16,8 +18,10 @@ const OfferDetails = () => {
   };
 
   const [userType, setUserType] = useState('CUSTOMER');
-  // const [landlordAsk, setlandlordAsk] = useState('');
-  // const [landlordOffer, setlandlordOffer] = useState('');
+  const [landlordAsk, setlandlordAsk] = useState('');
+  const [securitydeposit, setSecurityDeposit] = useState('');
+  const [rentOffered, setRentOffered] = useState('');
+  const [date, setDate] = useState(new Date());
 
 
 
@@ -54,12 +58,12 @@ const OfferDetails = () => {
 
 <div className='offerInput1'>
     <h5>Landlord Ask</h5>
-    <div className='firstDiv'>
-      <input autoFocus className='firstInput'></input>
+    <div className='firstDiv1'>
+      <input autoFocus className='firstInput1' onChange={(e)=>setlandlordAsk(e.target.value)} required value={landlordAsk}></input>
       <h6 className='firstTitle'>Amount Landlord is asking</h6>
     </div>
-    <div  className='secondDiv'>
-      <input className='secondInput'></input>
+    <div  className='secondDiv1'>
+      <input className='secondInput1' onChange={(e)=>setSecurityDeposit(e.target.value)} required value={securitydeposit}></input>
       <h6 className='firstTitle'>Enter your offer in monthly rent</h6>
     </div>
 </div>
@@ -67,17 +71,17 @@ const OfferDetails = () => {
 <div className='offerInput1'>
     <h5>Your Offer</h5>
 
-    <div className='firstDiv'>
-      <input className='firstInput'></input>
+    <div className='firstDiv1'>
+      <input className='firstInput1' onChange={(e)=>setRentOffered(e.target.value)} required value={rentOffered}></input>
       <h6 className='firstTitle'>Enter your offer of monthly rent</h6>
     </div>
-    <div  className='secondDiv'>
-      <input className='secondInput'></input>
+    <div  className='secondDiv1'>
+      <input className='secondInput1'></input>
       <h6 className='firstTitle'>Deposit Offered</h6>
     </div>
 
 
-    <div className='thirdDiv'>
+    <div className='thirdDiv1'>
     <select className='thirdSelect'>
                 <option>Select Term</option>
                 <option>1</option>
@@ -91,27 +95,29 @@ const OfferDetails = () => {
 
 <div className='offerInput1'>
     <h5>Rent Escalation</h5>
-    <div className='firstDiv'>
+    <div className='firstDiv1'>
     <select className='firstSelect'>
       <option>Flat</option>
       <option>1</option>
       <option>2</option>
     </select>
-      <input className='thirdInput'></input>
+      <input className='thirdInput1'></input>
+       <h6 className='firstTitle'>Choose a value to showcase amount</h6>
     </div>
-    
-    <div className='secondDiv'>
+
+    <div className='secondDiv1'>
+    <h3>/</h3>
+    </div>
+
+    <div className='forthDiv1'>
       <select className='secondSelect'>
       <option>5%</option>
       <option>10%</option>
       <option>12%</option>
     </select>
+    <h6 className='firstTitle'>Enter your offer in monthly rent</h6>
     </div>
     
-    <div className='offerSubheadings'>
-      <h6 className='offerSub4'>Choose a value to showcase amount</h6>
-      <h6>Enter your offer in monthly rent</h6>
-    </div>
 {/* {OfferTerm.map((item)=>{return})} */}
 <div className='offerBox1'>
   <h4>Term 1</h4>
@@ -134,7 +140,8 @@ const OfferDetails = () => {
 
  <div className='inputGap'>
     <h5>Rent Start Date</h5>
-    <select className='firstSelect'>
+    <Calendar onChange={setDate} value={date} className='calendar'/>{console.log(date)}
+    <select className='firstSelect1'>
                 <option>DD</option>
                 <option>1</option>
                 <option>2</option>
@@ -150,6 +157,7 @@ const OfferDetails = () => {
                 <option>2</option>
             </select>
    <h5 className='offerTitle'>Monthly Due Date</h5>
+
    <select className='sixthInput'>
                 <option>DD</option>
                 <option>1</option>
@@ -160,14 +168,14 @@ const OfferDetails = () => {
 
 <div className='inputGap'>
     <h5>Lock In Period</h5>
-    <select className='firstSelect'>
+    <select className='firstSelet1'>
                 <option>No.of Months</option>
                 <option>1</option>
                 <option>2</option>
             </select>
 
    <h5 className='offerTitle'>Notice Period</h5>
-   <select className='thirdSelect' onChange={(e)=>setUserType(e.target.value)} required value={userType}>
+   <select className='thirdSelect1' onChange={(e)=>setUserType(e.target.value)} required value={userType}>
                 <option value={'days'}>No.of Days</option>
                 <option value={'1'}>1</option>
                 <option value={'2'}>2</option>

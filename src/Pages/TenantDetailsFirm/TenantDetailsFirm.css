@@ -1,7 +1,4 @@
 
-
-
-
     .header{
         width: 100%;
         max-width: 1180px;
@@ -57,16 +54,19 @@
         height: 30px;  
         font-size: 15px;
         width: 340px;
+       
     }
     
     .secondInput{
     height: 30px;
     font-size: 15px;
+    
     }
     
     .thirdInput{
         height: 30px;
         width: 100px;
+        
         }
     
     .firstTitle{
@@ -126,7 +126,7 @@
 
 
     .offerInput2{
-        margin-top: 20px;
+        margin-top: 25px;
         display: flex;
         align-items: center;
         position: relative;
@@ -175,7 +175,7 @@
      
     /*--------------------------------------------- */
     .offerInput{
-    margin-top: 55px !important;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     position: relative;
@@ -221,18 +221,6 @@
         position: absolute;
         left: 0;
         bottom: -116px; 
-        color: #082346;
-        font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    white-space:nowrap ;
-    }
-
-    .addmoreText{
-        height: 30px;
-        position: absolute;
-        left: 0;
-        bottom: -146px; 
         color: #082346;
         font-weight: 500;
     font-size: 14px;
@@ -332,19 +320,17 @@ color: #FFFFFF;
     }
     
     
-    .offerInputt{
-        margin-top: 110px ;
+    .rowGap{
+        margin-top: 130px !important;
         display: flex;
         align-items: center;
-        
+        position: relative;
         white-space: nowrap;
         }
-        .offerInputt h5{
-           padding-right: 150px;
-            }
     
-        .offerInputtt{
-            margin-top: 175px;
+    
+        .offerInputttt{
+            margin-top: 180px;
             display: flex;
             align-items: center;
             position: relative;
@@ -364,7 +350,7 @@ color: #FFFFFF;
         margin-top: 45px;
         margin-bottom:50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
     }
     
