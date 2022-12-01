@@ -35,7 +35,7 @@ const OfferDetails = () => {
     <FormHeader/>
     <div className='subHeading'>
     <h1>Commercials</h1>
-    <h5 className='heading2'>Property Details-</h5>
+    <h5>Property Details-</h5>
 
 
 

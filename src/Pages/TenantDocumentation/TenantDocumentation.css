@@ -10,6 +10,18 @@
     .subheader h1{
     margin-bottom: 20px;
     }
+
+    .occupant{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+        
+      
+        /* Primary Blue */
+        
+        color: #082346;
+    }
 /* ------------------------------------ */
     
 .form{

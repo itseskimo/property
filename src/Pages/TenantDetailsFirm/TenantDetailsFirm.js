@@ -7,10 +7,11 @@ const TenantDetailsFirm = () => {
     <FormHeader/> 
    <div className='subheader'>
    <h1>Tenant Details</h1>
+  
    
 
 
-<div className='offerInput1'>
+<div className='offerInput2'>
    <h5>Type of Lease</h5>
    <div className='firstDiv'>
       <select className='firstSelect'>

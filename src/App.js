@@ -7,18 +7,20 @@ import TenantDocumentation from './Pages/TenantDocumentation/TenantDocumentation
 import Submit from './Pages/Submit/Submit'
 import TenantDetailsFirm from './Pages/TenantDetailsFirm/TenantDetailsFirm'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import FirmDocumentation from './Pages/FirmDocumentation/FirmDocumentation'
 
 const App = () => {
   return (
     <div>
        <Router>
         <Routes>
-          <Route path="/" element={<TenantDetails/>} />
-          <Route path="/tenantDetails" element={<OfferDetails/>} /> 
-           <Route path="/tenantDetailsFirm" element={<TenantDetailsFirm/>} />
-          <Route path="/tenantDocumentation" element={<TenantDocumentation/>} />
+          <Route path="/" element={<Submit/>} />
+          <Route path="/tenantDetails" element={<TenantDetails/>} /> 
+           <Route path="/tenantDetailsFirm" element={<OfferDetails/>} />
+          <Route path="/tenantDocumentation" element={<TenantDetailsFirm/>} />
           <Route path="/requestDetails" element={<RequestDetails/>} />
-          <Route path="/submit" element={<Submit/>} />
+          <Route path="/submit" element={<FirmDocumentation/>} />
+          <Route path="/firmDocumentation" element={<TenantDocumentation/>} />
         </Routes>
         </Router>
     </div>

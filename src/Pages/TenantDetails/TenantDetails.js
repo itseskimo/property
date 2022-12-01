@@ -11,7 +11,7 @@ const TenantDetails = () => {
     
 
 
-<div className='offerInput1'>
+<div className='lessGap'>
     <h5>Type of Lease</h5>
     <div className='firstDiv'>
        <select className='firstSelect'>
@@ -74,7 +74,7 @@ const TenantDetails = () => {
     </div>
 </div>
 
-<div className='offerInputt'>
+<div className='rowGap'>
     <h5>Enter Employer Details</h5>
     <div className='firstDiv'>
       <input className='thirdInput'></input>  
@@ -114,7 +114,7 @@ const TenantDetails = () => {
       <div className='offerSubheadings'>
      
 <div>
-      <input className='selectHeading'></input>
+      <input className='selectHeadi'></input>
       <h6 className='selectHeading1'>Enter age</h6>
       </div>
       <div className='forthDiv'>
@@ -133,14 +133,14 @@ const TenantDetails = () => {
 </div>
 
 
-<div className='offerInputtt'>
+<div className='largeLineHeight'>
     <h5>Do you have any Pets?</h5>
     <button className='select1'>Yes</button>
     <button className='select2'>No</button>
 </div>
 
 
-<div className='offerInput1'>
+<div className='lessGap'>
     <h5>Enter Pet Details</h5>
     <div className='firstDiv'>
        <select className='firstSelect'>

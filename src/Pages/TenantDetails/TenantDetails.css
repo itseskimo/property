@@ -18,14 +18,14 @@
     
     
     /* ------------------------------- */
-    .offerInput1{
-        margin-top: 30px !important;
+    .lessGap{
+        margin-top: 10px ;
         display: flex;
         align-items: center;
         position: relative;
         }
     
-    .offerInput1 h5{
+    .lessGap h5{
         padding-right: 150px;
         white-space: nowrap;
         }
@@ -49,7 +49,7 @@
     }
     .forthDiv{
         position: absolute;
-        left: 220px;
+        left: 210px;
         bottom: -33px; 
     }
     
@@ -194,12 +194,19 @@
     }
     
     .selectHeading{
-        height: 30px;
+        height: 35px !important;
         position: absolute;
         left: 0;
         bottom: -33px; 
     }
     
+    .selectHeadi{
+        height: 30px ;
+        position: absolute;
+        left: 0;
+        bottom: -33px; 
+    }
+
     
     .selectHead{
         height: 35px;
@@ -332,17 +339,17 @@ color: #FFFFFF;
     }
     
     
-    .offerInputt{
-        margin-top: 110px ;
+    .rowGap{
+        margin-top: 105px ;
         display: flex;
         align-items: center;
-        
+        position: relative;
         white-space: nowrap;
         }
         
     
-        .offerInputtt{
-            margin-top: 175px;
+        .largeLineHeight{
+            margin-top: 155px;
             display: flex;
             align-items: center;
             position: relative;

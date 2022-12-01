@@ -13,11 +13,7 @@ color: #082346;
 line-height: 48px;
 }
 
-.heading2{
-    font-weight: 600;
-font-size: 18px;
-line-height: 27px;
-    }
+
 
 
 .offerImage{
@@ -204,7 +200,7 @@ font-size: 15px;
     height: 35px; 
     width: 120px;
     position: absolute;
-    left: 760px;  
+    left: 740px;  
 }
 .secondSelect{
     height: 35px; 
@@ -298,13 +294,13 @@ border-radius: 12px;
 
 .offerTitle{
     position: absolute;
-    left: 660px;
+    left: 630px;
     white-space: nowrap;
 }
 
 .sixthInput{
     position: absolute;
-    left: 790px;
+    left: 770px;
      height: 35px; 
      width: 57px;
 }

@@ -15,8 +15,8 @@
     
     
     /* ------------------------------- */
-    .offerInput1{
-        margin-top: 30px !important;
+    /* .offerInput1{
+        margin-top: 30px ;
         display: flex;
         align-items: center;
         position: relative;
@@ -25,7 +25,7 @@
     .offerInput1 h5{
         padding-right: 150px;
         white-space: nowrap;
-        }
+        } */
     
     
     /* ------------------------------------ */
@@ -194,7 +194,7 @@
     }
     
     .selectHeading{
-        height: 30px;
+        height: 35px !important;
         position: absolute;
         left: 0;
         bottom: -33px; 
@@ -321,7 +321,7 @@ color: #FFFFFF;
     
     
     .offerInputt{
-        margin-top: 130px !important;
+        margin-top: 130px ;
         display: flex;
         align-items: center;
         position: relative;
