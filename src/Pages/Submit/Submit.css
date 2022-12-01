@@ -130,8 +130,8 @@ color: #808080;
 
 
 /* ----------------------------------- */
-.underLine1{
-    margin-top: 450px;
+.underLine12{
+    margin-top: 400px;
     height: 2px;
     max-width: 863px;
     background-color: black;
@@ -139,8 +139,7 @@ color: #808080;
 
 .button1{
     width: 863px ;
-    
-    margin-top: 80px;
+    margin-top: 45px;
     margin-bottom:50px;
 display: flex;
 justify-content: space-between;

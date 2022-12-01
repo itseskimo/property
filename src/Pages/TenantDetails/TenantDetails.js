@@ -164,7 +164,7 @@ const TenantDetails = () => {
 
 <div className='button'>
   <button className='buttonReset'>Reset</button>
-  {/* <button className='buttonMid'>Previous</button> */}
+  <button className='buttonMid'>Previous</button>
   <button className='buttonContinue'>Continue</button>
 </div> 
 

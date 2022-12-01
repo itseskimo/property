@@ -51,7 +51,7 @@ const Submit = () => {
 
 
 
-<div className='underLine1'></div>
+<div className='underLine12'></div>
 
 <div className='button1'>
   <button className='buttonReset'>Reset</button>

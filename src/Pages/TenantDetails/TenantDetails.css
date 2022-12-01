@@ -1,11 +1,7 @@
-
-
-
-
     .header{
-        width: 100%;
-        max-width: 1180px;
-        margin: auto;
+    width: 100%;
+    max-width: 1180px;
+    margin: auto;
     }
     
     
@@ -13,22 +9,18 @@
     margin-bottom: 20px;
     }
     
-    
-    
-    
-    
     /* ------------------------------- */
     .lessGap{
-        margin-top: 10px ;
-        display: flex;
-        align-items: center;
-        position: relative;
-        }
+    margin-top: 10px ;
+    display: flex;
+    align-items: center;
+    position: relative;
+    }
     
     .lessGap h5{
-        padding-right: 150px;
-        white-space: nowrap;
-        }
+    padding-right: 150px;
+    white-space: nowrap;
+    }
     
     
     /* ------------------------------------ */
@@ -76,11 +68,7 @@
       white-space: nowrap;
     }
     
-    /* .thirdSelect{
-        height: 35px; 
-        width: 127px;  
-    } */
-    
+  
     .firstSelect{
         margin-right: 30px;
         height: 36px;
@@ -93,36 +81,6 @@
         left: 240px;
     }
     
-    /* .thirdSelect1{
-        height: 35px; 
-        width: 127px;
-        position: absolute;
-        left: 680px;  
-    }
-    .secondSelect{
-        height: 35px; 
-    }*/
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     .offerInput2{
@@ -137,41 +95,22 @@
         padding-right: 150px;
         white-space: nowrap;
         }
-    
-    /* .offerSub2{
-        margin-right: 277px;
-        }
-    
-    .offerSub3{
-        margin-right: 60px;
-        }
-    
-    .offerSub4{
-        margin-right: 577px;
-        }
-    
-        .offerSub5{
-            margin-right: 330px;
-            } */
+  
     /* ------------------------------------------ */
     
     .input3{
-        position: absolute;
-        left: 370px;
-        height: 30px;
-        width: 100px;
-        }
+    position: absolute;
+    left: 370px;
+    height: 30px;
+    width: 100px;
+    }
     
-        .input2{
-            /* position: absolute;
-            left: 240px; */
-            height: 30px;
-            width: 100px;
-            }
+    .input2{
+    height: 30px;
+    width: 100px;
+    }
     
-    /* .offerSub4{
-        margin-right: 60px;
-        } */
+   
      
     /*--------------------------------------------- */
     .offerInput{
@@ -191,6 +130,7 @@
         height: 30px;
         position: absolute;
         left: 240px;
+        width: 60px;
     }
     
     .selectHeading{
@@ -210,9 +150,6 @@
     
     .selectHead{
         height: 35px;
-        /* position: absolute;
-        left: 220px;
-        bottom: -33px;  */
     }
     
     .selectHeading1{
@@ -277,17 +214,8 @@
 border: 1px solid #082346;
 border-radius: 4px;
 color: #FFFFFF;
+width: 60px;
     }
-    
-    
-    /* .input1{
-        margin-right: 50px;
-        height: 30px;
-        width: 340px;
-        position: absolute;
-        left: 240px;
-    } */
-    
     
     .input5{
         height: 30px;
@@ -321,13 +249,7 @@ color: #FFFFFF;
         left: 240px;
         }
     
-    /* .select{
-        
-        height: 30px;  
-        font-size: 15px;
-        width: 340px;
-    } */
-    
+  
     .offerSubheadings{
     display: flex;
     align-items: center;
@@ -369,7 +291,7 @@ color: #FFFFFF;
         margin-top: 45px;
         margin-bottom:50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
     }
     

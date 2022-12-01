@@ -166,7 +166,7 @@ const OfferDetails = () => {
 </div>
 
 
-<div className='inputGap'>
+<div className='offerInput1'>
     <h5>Lock In Period</h5>
     <select className='firstSelet1'>
                 <option>No.of Months</option>
@@ -184,12 +184,12 @@ const OfferDetails = () => {
 
 
 
-<div className='underLine'></div>
+<div className='underLine1'></div>
 
-<div className='button'>
-  <button className='buttonReset' onClick={goForward}>Reset</button>
+<div className='buttonSet'>
+  <button className='buttonReset1' onClick={goForward}>Reset</button>
   
-  <button className='buttonContinue' onClick={goBack}>Continue</button>
+  <button className='buttonContinue1' onClick={goBack}>Continue</button>
  
 </div>
 

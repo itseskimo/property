@@ -28,7 +28,7 @@ margin-bottom: 20px;
     
 }
 
-.input4{
+.request{
     margin-right: 50px;
     height: 85px;
     width: 504px;
@@ -75,19 +75,20 @@ color: #082346;
 
 
 /* ----------------------------------- */
-.underLine{
+.underLinee{
     margin-top: 130px;
     height: 2px;
     width: 863px;
     background-color: black;
 }
 
-.button{
+.button1{
     width: 863px;
     margin-top: 45px;
     margin-bottom:50px;
 display: flex;
 position: relative;
+justify-content: space-between;
 }
 
 .buttonReset{
