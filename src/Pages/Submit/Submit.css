@@ -27,7 +27,7 @@ height: 20px;
 width: 20px;
 object-fit: contain;
 color: #000;
-margin-top: 16px;
+margin-top: 12px;
 }
 
 .formAlign{
@@ -49,8 +49,8 @@ margin-right: 270px;
 
 .formBox{
     
-    height: 49px;
-    width: 293px;
+    height: 40px;
+    width: 200px;
     position: absolute;
     left: 240px;
     background: #F1F5F7;

@@ -11,21 +11,22 @@ margin-bottom: 20px;
 
 
 .requestInput{
-    margin-top: 40px;
+    margin-top: 80px;
     display: flex;
     align-items: center;
     position: relative;
     }
 
 
-.formCircle{
+.formCirclee{
     border-radius: 50%;
     border: 1px solid black;
     height: 20px;
     width: 20px;
     font-size: 13px;
     text-align: center;
-    
+    position: absolute;
+    bottom: 0;
 }
 
 .request{
@@ -41,14 +42,15 @@ margin-bottom: 20px;
 
     
         
-.subheadings{
+.requestheadings{
 color: #808080;
 font-weight: 500;
 font-size: 12px;
 line-height: 15px;
 position: absolute;
     left: 30px;
-    bottom: -60px;
+    white-space: nowrap;
+    bottom: -95px;
     }
 
 
@@ -56,7 +58,7 @@ position: absolute;
     height: 30px;
     position: absolute;
     left: 30px;
-    bottom: -100px; 
+    bottom: -125px; 
     background: #FFFFFF;
 /* Primary Blue */
 
@@ -75,20 +77,20 @@ color: #082346;
 
 
 /* ----------------------------------- */
-.underLinee{
-    margin-top: 130px;
+.requestUnderLine{
+    margin-top: 150px;
     height: 2px;
     width: 863px;
     background-color: black;
 }
 
-.button1{
+.button{
     width: 863px;
     margin-top: 45px;
     margin-bottom:50px;
 display: flex;
-position: relative;
 justify-content: space-between;
+position: relative;
 }
 
 .buttonReset{
@@ -107,9 +109,25 @@ font-size: 20px;
 line-height: 30px;
 }
 
+.buttonMid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #082346;
+    border-radius: 12px;
+    background: #6D6D6D;
+    padding: 16px 24px;
+    width: 185px;
+    height: 62px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
 .buttonContinue{
-    position: absolute;
-    right: 0;
+    /* position: absolute;
+    right: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
