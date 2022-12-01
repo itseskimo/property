@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './OfferDetails.css'
 import { useNavigate } from "react-router-dom";
-import { Calendar } from 'react-calendar';
+// import { Calendar } from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 //import OfferTerm from '../../Constants/OfferTerm'
 const OfferDetails = () => {
@@ -21,7 +21,7 @@ const OfferDetails = () => {
   const [landlordAsk, setlandlordAsk] = useState('');
   const [securitydeposit, setSecurityDeposit] = useState('');
   const [rentOffered, setRentOffered] = useState('');
-  const [date, setDate] = useState(new Date());
+  // const [date, setDate] = useState(new Date());
 
 
 
@@ -35,7 +35,7 @@ const OfferDetails = () => {
     <FormHeader/>
     <div className='subHeading'>
     <h1>Commercials</h1>
-    <h5>Property Details-</h5>
+    <h5 className='heading2'>Property Details-</h5>
 
 
 
@@ -140,7 +140,7 @@ const OfferDetails = () => {
 
  <div className='inputGap'>
     <h5>Rent Start Date</h5>
-    <Calendar onChange={setDate} value={date} className='calendar'/>{console.log(date)}
+    {/* <Calendar onChange={setDate} value={date} className='calendar'/>{console.log(date)} */}
     <select className='firstSelect1'>
                 <option>DD</option>
                 <option>1</option>

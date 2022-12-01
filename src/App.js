@@ -14,9 +14,9 @@ const App = () => {
     <div>
        <Router>
         <Routes>
-          <Route path="/" element={<Submit/>} />
+          <Route path="/" element={<OfferDetails/>} />
           <Route path="/tenantDetails" element={<TenantDetails/>} /> 
-           <Route path="/tenantDetailsFirm" element={<OfferDetails/>} />
+           <Route path="/tenantDetailsFirm" element={<Submit/>} />
           <Route path="/tenantDocumentation" element={<TenantDetailsFirm/>} />
           <Route path="/requestDetails" element={<RequestDetails/>} />
           <Route path="/submit" element={<FirmDocumentation/>} />

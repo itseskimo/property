@@ -18,7 +18,7 @@ const Submit = () => {
     <div className='formBox'>
       <img className='formIcon' src='https://cdn-icons-png.flaticon.com/512/3997/3997608.png' alt='pdf'/>
       <div className='formAlign'>
-              <h5 className='formBox1'>Lettr of Intent (LOI).PDF</h5>
+              <h5 className='formBox1'>Letter of Intent (LOI).PDF</h5>
       <h6 >54kb</h6>
 
       </div>
