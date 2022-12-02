@@ -52,27 +52,16 @@ const Submit = ({active,setActive}) => {
       </div>
       <div className='terms'>
         <input type="checkbox"></input>
-        <label for="t&c"> I hereby confirm that I have reviewed the Letter of Intent and the details entered by me is correct, Also I agree with Terms of Conditions.</label>
+        <label> I hereby confirm that I have reviewed the Letter of Intent and the details entered by me is correct, Also I agree with Terms of Conditions.</label>
       </div>
-      
-
 </div>
-
-
-
-
-
- 
-
-
-
 
 <div className='underLine12'></div>
 
 <div className='button1'>
   <button className='buttonReset'>Reset</button>
   <button className='buttonMid' onClick={prevBtn}>Previous</button>
-  <button className='buttonContinue'onClick={nextBtn}>Continue</button>
+  <button className='buttonContinue'onClick={nextBtn}>Submit</button>
 </div> 
 
 
