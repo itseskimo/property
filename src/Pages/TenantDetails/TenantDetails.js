@@ -1,10 +1,12 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './TenantDetails.css'
 import { useNavigate } from "react-router-dom";
+
 const TenantDetails = ({active,setActive}) => {
-    
+
     const navigate = useNavigate();
+
     function nextBtn(){
         navigate('/requestDetails')
         console.log(active)
@@ -21,6 +23,17 @@ const TenantDetails = ({active,setActive}) => {
      setActive(active-1)
      }
      
+useEffect(() => {
+    window.scrollTo({
+        top:0,
+        behavior:'smooth',
+    })
+}, [])
+
+
+
+
+
   return (
     <div className='header'>
      <FormHeader active={active} setActive={setActive}/> 
