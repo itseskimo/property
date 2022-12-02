@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './Submit.css'
 
@@ -19,6 +19,13 @@ const Submit = ({active,setActive}) => {
      setActive(active-1)
      }
     
+     useEffect(() => {
+      window.scrollTo({
+          top:0,
+          behavior:'smooth',
+      })
+  }, [])
+
   return (
     <div className='header'>
      <FormHeader active={active} setActive={setActive}/> 
