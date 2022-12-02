@@ -1,11 +1,27 @@
 import React from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './TenantDocumentation.css'
-
-const TenantDocumentation = () => {
+import { useNavigate } from "react-router-dom";
+  
+const TenantDocumentation = ({active,setActive}) => {
+  const navigate = useNavigate();
+    function nextBtn(){
+        navigate('/submit') 
+        if(active>=4){
+            setActive(active=4)
+        }
+     setActive(active+1)
+     }
+    
+     function prevBtn(){
+        if(active<=0){
+            setActive(active=0)
+        }
+     setActive(active-1)
+     }
   return (
     <div className='header'>
-     <FormHeader/> 
+     <FormHeader active={active} setActive={setActive}/> 
     <div className='subheader'>
     <h1>Tenant Documentation</h1>
     <h5 className='occupant'>Occupant-1</h5>
@@ -114,8 +130,8 @@ const TenantDocumentation = () => {
 
 <div className='button'>
   <button className='buttonReset'>Reset</button>
-  <button className='buttonMid'>Previous</button>
-  <button className='buttonContinue'>Continue</button>
+  <button className='buttonMid' onClick={prevBtn}>Previous</button>
+  <button className='buttonContinue' onClick={nextBtn}>Continue</button>
 </div> 
 
 

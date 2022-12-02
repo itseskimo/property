@@ -1,10 +1,25 @@
 import React from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './TenantDetailsFirm.css'
-const TenantDetailsFirm = () => {
+const TenantDetailsFirm = ({active,setActive}) => {
+    function nextBtn(){
+        console.log(active)
+        if(active>=4){
+            setActive(active=4)
+        }
+     setActive(active+1)
+     }
+    
+     function prevBtn(){
+        if(active<=0){
+            setActive(active=0)
+        }
+     setActive(active-1)
+     }
+    
   return (
     <div className='header'>
-    <FormHeader/> 
+    <FormHeader active={active} setActive={setActive}/> 
    <div className='subheader'>
    <h1>Tenant Details</h1>
   
@@ -99,8 +114,8 @@ const TenantDetailsFirm = () => {
 
 <div className='button'>
   <button className='buttonReset'>Reset</button>
-  <button className='buttonMid'>Previous</button>
-  <button className='buttonContinue'>Continue</button>
+  <button className='buttonMid' onClick={prevBtn}>Previous</button>
+  <button className='buttonContinue' onClick={nextBtn}>Continue</button>
 </div> 
 
 

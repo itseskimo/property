@@ -1,24 +1,24 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './FormHead.css'
 import HeaderData from '../../Constants/HeaderData'
 
-const Form = () => {
-    let[active, setActive] = useState(0)
-     function nextBtn(){
-        console.log(active)
-        if(active>=4){
-            setActive(active=4)
-        }
-     setActive(active+1)
-     }
-
-     function prevBtn(){
-        if(active<=0){
-            setActive(active=0)
-        }
-     setActive(active-1)
-     }
-
+const Form = ({active,setActive}) => {
+   
+    // function nextBtn(){
+    //     console.log(active)
+    //     if(active>=4){
+    //         setActive(active=4)
+    //     }
+    //  setActive(active+1)
+    //  }
+    
+    //  function prevBtn(){
+    //     if(active<=0){
+    //         setActive(active=0)
+    //     }
+    //  setActive(active-1)
+    //  }
+    
 
   return (
     <div>            
@@ -44,8 +44,8 @@ const Form = () => {
                     <h5  onClick={()=> setActive(item.id)} className={`formHeading ${active===item.id?`activeWord`: ``}`}>{item.name}</h5>   
                 </div>
             })}
-            <button onClick={prevBtn}>pev</button>
-            <button onClick={nextBtn}>next</button>
+            {/* <button onClick={prevBtn}>pev</button>
+            <button onClick={nextBtn}>next</button> */}
             </div>
         </div>
     </div>

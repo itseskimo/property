@@ -2,10 +2,26 @@ import React from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './Submit.css'
 
-const Submit = () => {
+const Submit = ({active,setActive}) => {
+  
+    function nextBtn(){
+        console.log(active)
+        if(active>=4){
+            setActive(active=4)
+        }
+     setActive(active+1)
+     }
+    
+     function prevBtn(){
+        if(active<=0){
+            setActive(active=0)
+        }
+     setActive(active-1)
+     }
+    
   return (
     <div className='header'>
-     <FormHeader/> 
+     <FormHeader active={active} setActive={setActive}/> 
     <div className='subheader'>
     <h1>Review & Submit</h1>
     
@@ -55,8 +71,8 @@ const Submit = () => {
 
 <div className='button1'>
   <button className='buttonReset'>Reset</button>
-  <button className='buttonMid'>Previous</button>
-  <button className='buttonContinue'>Continue</button>
+  <button className='buttonMid' onClick={prevBtn}>Previous</button>
+  <button className='buttonContinue'onClick={nextBtn}>Continue</button>
 </div> 
 
 

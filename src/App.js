@@ -1,4 +1,3 @@
-import React from 'react'
 import TenantDetails from './Pages/TenantDetails/TenantDetails'
   import RequestDetails from './Pages/RequestDetails/RequestDetails'
  import FirmDocumentation from './Pages/FirmDocumentation/FirmDocumentation'
@@ -7,20 +6,24 @@ import TenantDetails from './Pages/TenantDetails/TenantDetails'
  import TenantDetailsFirm from './Pages/TenantDetailsFirm/TenantDetailsFirm'
 import OfferDetails from './Pages/OfferDetails/OfferDetails'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-
+import React,{useState} from 'react'
 
 
 const App = () => {
+
+  let[active, setActive] = useState(0)
+  
+
   return (
     <div>
        <Router>
         <Routes>
-            <Route path="/" element={<OfferDetails/>} /> 
-             <Route path="/tenantDetails" element={<TenantDetails/>} /> 
-             <Route path="/tenantDetailsFirm" element={<TenantDetailsFirm/>} />
-              <Route path="/requestDetails" element={<RequestDetails/>} />
-             <Route path="/tenantDocumentation" element={<TenantDocumentation/>} />
-             <Route path="/firmDocumentation" element={<FirmDocumentation/>} />
+            <Route path="/" element={<OfferDetails active={active} setActive={setActive}/>} /> 
+             <Route path="/tenantDetails" element={<TenantDetails active={active} setActive={setActive}/>} /> 
+             <Route path="/tenantDetailsFirm" element={<TenantDetailsFirm active={active} setActive={setActive}/>} />
+              <Route path="/requestDetails" element={<RequestDetails active={active} setActive={setActive}/>} />
+             <Route path="/tenantDocumentation" element={<TenantDocumentation active={active} setActive={setActive}/>} />
+             <Route path="/firmDocumentation" element={<FirmDocumentation active={active} setActive={setActive}/>} />
              <Route path="/submit" element={<Submit/>} />
         </Routes>
         </Router>

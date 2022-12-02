@@ -1,21 +1,12 @@
 import React,{useState} from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './OfferDetails.css'
-import { useNavigate } from "react-router-dom";
 // import { Calendar } from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-//import OfferTerm from '../../Constants/OfferTerm'
-const OfferDetails = () => {
+import { useNavigate } from "react-router-dom";
+
+const OfferDetails = ({active,setActive}) => {
   const navigate = useNavigate();
-
-  const goBack = () => {
-      navigate(-1);
-  };
-  
-
-  const goForward = () => {
-    navigate(1);
-  };
 
   const [userType, setUserType] = useState('CUSTOMER');
   const [landlordAsk, setlandlordAsk] = useState('');
@@ -23,7 +14,20 @@ const OfferDetails = () => {
   const [rentOffered, setRentOffered] = useState('');
   // const [date, setDate] = useState(new Date());
 
+  function nextBtn(){
+    navigate('/tenantDetails')
+    if(active>=4){
+        setActive(active=4)
+    }
+ setActive(active+1)
+ }
 
+ function prevBtn(){
+    if(active<=0){
+        setActive(active=0)
+    }
+ setActive(active-1)
+ }
 
 
 
@@ -32,7 +36,7 @@ const OfferDetails = () => {
 
   return (
     <div className='heading'>
-    <FormHeader/>
+    <FormHeader  active={active} setActive={setActive}/>
     <div className='subHeading'>
     <h1>Commercials</h1>
     <h5 className='heading2'>Property Details-</h5>
@@ -187,9 +191,9 @@ const OfferDetails = () => {
 <div className='underLine1'></div>
 
 <div className='buttonSet'>
-  <button className='buttonReset1' onClick={goForward}>Reset</button>
+  <button className='buttonReset1' onClick={prevBtn}>Reset</button>
   
-  <button className='buttonContinue1' onClick={goBack}>Continue</button>
+  <button className='buttonContinue1' onClick={nextBtn}>Continue</button>
  
 </div>
 
