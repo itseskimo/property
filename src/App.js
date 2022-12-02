@@ -9,18 +9,19 @@ import OfferDetails from './Pages/OfferDetails/OfferDetails'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 
+
 const App = () => {
   return (
     <div>
        <Router>
         <Routes>
-            <Route path="/offerDetails" element={<OfferDetails/>} /> 
+            <Route path="/" element={<OfferDetails/>} /> 
              <Route path="/tenantDetails" element={<TenantDetails/>} /> 
              <Route path="/tenantDetailsFirm" element={<TenantDetailsFirm/>} />
               <Route path="/requestDetails" element={<RequestDetails/>} />
              <Route path="/tenantDocumentation" element={<TenantDocumentation/>} />
              <Route path="/firmDocumentation" element={<FirmDocumentation/>} />
-             <Route path="/" element={<Submit/>} />
+             <Route path="/submit" element={<Submit/>} />
         </Routes>
         </Router>
     </div>

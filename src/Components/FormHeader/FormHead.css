@@ -39,6 +39,38 @@
 .activeCircle{
     background: #082346;
     color: white !important;
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #082346;
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    /* color: #082346; */
+}
+.greenCircle{
+  background: #42A54C;
+/* Secondary Green */
+
+    border: 1px solid #42A54C;
+    color: white !important;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* border: 1px solid #082346; */
+    height: 20px;
+    width: 20px;
+    font-weight: 700;
+    font-size: 13px;
+    /* color: #082346; */
 }
 
 .active{
