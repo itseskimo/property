@@ -277,6 +277,7 @@ border-radius: 12px;
     margin-bottom:50px;
     display: flex;
     position: relative;
+    justify-content: space-between;
 }
 
 .buttonReset1{
@@ -297,8 +298,9 @@ cursor: pointer;
 }
 
 .buttonContinue1{
-    position: absolute;
-    right: 0;
+    /* position: absolute;
+    right: 0; */
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -419,9 +421,7 @@ margin-left: 40px;
             }
 
             .offerTitle{
-
                 left: 590px;
-
             }
 
             .firstSelet1{
@@ -446,4 +446,28 @@ margin-left: 40px;
                 .firstTitle{
 font-size:10px;
                 }
+}
+
+
+@media(max-width:900px){
+    .offerTitle{
+        left: 500px;
+    }
+    .thirdSelect1{
+        left: 630px;  
+    }
+
+    .sixthInput{
+        left: 630px;
+    }
+
+
+    .underLine1{
+        width: 793px; 
+    }
+
+
+    .buttonSet{
+        width: 793px;
+    }
 }

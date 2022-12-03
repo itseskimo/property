@@ -39,11 +39,20 @@ position: relative;
     
 .offerSub5{
     margin-right: 270px;
+    white-space: nowrap;
 }
 
 /*--------------------------------------------- */
 
-    
+.firstDiv1{
+    position: absolute;
+    left: 240px;    
+}
+
+.secondDiv1{
+    position: absolute;
+    left: 455px;    
+}
     
 
 
