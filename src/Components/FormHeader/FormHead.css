@@ -40,7 +40,7 @@
     background: #082346;
     color: white !important;
 
-
+transition: 0.4s ease;
 
     display: flex;
     align-items: center;
@@ -55,11 +55,10 @@
 }
 .greenCircle{
   background: #42A54C;
-/* Secondary Green */
 
     border: 1px solid #42A54C;
     color: white !important;
-
+    transition: 0.4s ease;
 
     display: flex;
     align-items: center;
@@ -175,6 +174,21 @@ left: 160px; */
         width: 18px !important;
         font-size: 11px !important; 
     }
+
+    .activeCircle{
+      height: 18px !important;
+      width: 18px !important;
+      font-size: 11px !important; 
+    }
+
+    .greenCircle{
+      height: 18px !important;
+      width: 18px !important;
+      font-size: 11px !important; 
+    }
+
+
+
     .formHeading{
         margin-right: 10px;   
      }
@@ -190,6 +204,18 @@ left: 160px; */
         width: 17px !important;
         font-size: 10px !important; 
     }
+    .activeCircle{
+      height: 17px !important;
+      width: 17px !important;
+      font-size: 10px !important; 
+    }
+
+    .greenCircle{
+      height: 17px !important;
+      width: 17px !important;
+      font-size: 10px !important; 
+    }
+
     .formHeading{
         margin-right: 8px;   
      }
@@ -279,6 +305,18 @@ left: 160px; */
         height: 15px !important;
         width: 15px !important;
         font-size: 9px !important; 
+    }
+
+    .activeCircle{
+      height: 15px !important;
+      width: 15px !important;
+      font-size: 9px !important; 
+    }
+
+    .greenCircle{
+      height: 15px !important;
+      width: 15px !important;
+      font-size: 9px !important; 
     }
   }
 

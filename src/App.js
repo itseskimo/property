@@ -12,7 +12,7 @@ import React,{useState} from 'react'
 const App = () => {
 //To keep a track of dynamic header which will trigger on click
   let[active, setActive] = useState(0)
-  
+  localStorage.setItem('active',active)
   return (
     <div>
        <Router>
