@@ -177,7 +177,9 @@ font-size: 15px;
 .calendar{
 position: absolute;
 left: 240px;
-bottom: 555;
+bottom: -345px;
+border: 1px solid black;
+padding-bottom: 0;
 }
 
 .offerBox1{

@@ -1,9 +1,11 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './OfferDetails.css'
-// import { Calendar } from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
 import { useNavigate } from "react-router-dom";
+import { DateRange } from 'react-date-range';
+import 'react-date-range/dist/styles.css'; // main style file
+import 'react-date-range/dist/theme/default.css'; // theme css file
+import {format} from 'date-fns'
 
 const OfferDetails = ({active,setActive}) => {
   const navigate = useNavigate();
@@ -12,7 +14,15 @@ const OfferDetails = ({active,setActive}) => {
   const [landlordAsk, setlandlordAsk] = useState('');
   const [securitydeposit, setSecurityDeposit] = useState('');
   const [rentOffered, setRentOffered] = useState('');
-  // const [date, setDate] = useState(new Date());
+  const[openDate,setOpenDate]=useState(false)
+  const [date, setDate] = useState([{
+    startDate: new Date(),
+    endDate: new Date(),
+    key: 'selection',
+  }
+]);
+
+
 
   function nextBtn(){
     navigate('/tenantDetails')
@@ -30,6 +40,12 @@ const OfferDetails = ({active,setActive}) => {
  }
 
 
+ useEffect(() => {
+  window.scrollTo({
+      top:0,
+      behavior:'smooth',
+  })
+}, [])
 
 
 
@@ -144,26 +160,34 @@ const OfferDetails = ({active,setActive}) => {
 
  <div className='inputGap'>
     <h5>Rent Start Date</h5>
-    {/* <Calendar onChange={setDate} value={date} className='calendar'/>{console.log(date)} */}
-    <select className='firstSelect1'>
-                <option>DD</option>
-                <option>1</option>
-                <option>2</option>
+
+    {openDate && <DateRange editableDateInputs={true}  
+    onChange={(item)=>setDate([item.selection])} 
+    moveRangeOnFirstSelection={false}
+    ranges={date}
+    className='calendar'
+    />}
+    
+
+    <select onClick={()=>setOpenDate(!openDate)}    className='firstSelect1'>
+                <option>{`${format(date[0].startDate, 'dd')}`}</option>
+                {/* <option>1</option>
+                <option>2</option> */}
             </select>
     <select className='forthSelect'>
-                <option>MM</option>
+                <option>{`${format(date[0].startDate, 'MM')}`}</option>
                 <option>1</option>
                 <option>2</option>
             </select>
     <select className='fifthSelect'>
-                <option>YY</option>
+                <option>{`${format(date[0].startDate, 'yyyy')}`}</option>
                 <option>1</option>
                 <option>2</option>
             </select>
    <h5 className='offerTitle'>Monthly Due Date</h5>
 
    <select className='sixthInput'>
-                <option>DD</option>
+                <option>{`${format(date[0].endDate, 'dd')}`}</option>
                 <option>1</option>
                 <option>2</option>
             </select>
