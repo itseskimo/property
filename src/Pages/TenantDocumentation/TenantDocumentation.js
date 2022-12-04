@@ -14,6 +14,7 @@ const TenantDocumentation = ({active,setActive}) => {
      }
     
      function prevBtn(){
+      navigate('/requestDetails')
         if(active<=0){
             setActive(active=0)
         }
@@ -67,7 +68,7 @@ const TenantDocumentation = ({active,setActive}) => {
     <input className='select' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
 
       <div className='offerSubheadings'>
-      <h6 className='offerSub5'>Enter Aadhar card number</h6>
+      <h6 className='offerSub6'>Enter Aadhar card number</h6>
       <h6 >Upload PNG or PDF (Max 25 mb)</h6>
     </div>
 </div>
@@ -115,7 +116,7 @@ const TenantDocumentation = ({active,setActive}) => {
     <input className='select' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
 
       <div className='offerSubheadings'>
-      <h6 className='offerSub5'>Enter Aadhar card number</h6>
+      <h6 className='offerSub6'>Enter Aadhar card number</h6>
       <h6 >Upload PNG or PDF (Max 25 mb)</h6>
     </div>
 </div>

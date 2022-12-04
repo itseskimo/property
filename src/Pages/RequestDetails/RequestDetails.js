@@ -14,6 +14,7 @@ const RequestDetails = ({active,setActive}) => {
    }
   
    function prevBtn(){
+    navigate('/tenantDetails')
       if(active<=0){
           setActive(active=0)
       }

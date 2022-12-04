@@ -114,6 +114,7 @@ padding: 10px;
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
+    cursor: pointer;
     }
     
     .buttonMid{
@@ -131,6 +132,7 @@ padding: 10px;
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
+        cursor: pointer;
     }
 
     .buttonContinue{
@@ -149,4 +151,5 @@ padding: 10px;
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
+        cursor: pointer;
         }

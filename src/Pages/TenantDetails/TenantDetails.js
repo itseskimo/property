@@ -17,6 +17,7 @@ const TenantDetails = ({active,setActive}) => {
      }
     
      function prevBtn(){
+        navigate('/')
         if(active<=0){
             setActive(active=0)
         }

@@ -1,9 +1,11 @@
 import React,{useEffect} from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './Submit.css'
+import { useNavigate } from "react-router-dom";
+
 
 const Submit = ({active,setActive}) => {
-  
+  const navigate = useNavigate();
     function nextBtn(){
         console.log(active)
         if(active>=4){
@@ -13,6 +15,7 @@ const Submit = ({active,setActive}) => {
      }
     
      function prevBtn(){
+      navigate('/tenantDocumentation')
         if(active<=0){
             setActive(active=0)
         }

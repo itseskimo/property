@@ -38,10 +38,14 @@ position: relative;
 
     
 .offerSub5{
-    margin-right: 270px;
+    margin-right: 265px;
     white-space: nowrap;
 }
 
+.offerSub6{
+    margin-right: 250px;
+    white-space: nowrap;
+}
 /*--------------------------------------------- */
 
 .firstDiv1{
@@ -91,7 +95,9 @@ padding: 10px;
     color: #808080;
     }
     
-    
+    .offerSubheadings h6{
+     white-space: nowrap;
+        }
     
     /* ----------------------------------- */
     .underLine{
