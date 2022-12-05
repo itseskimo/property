@@ -144,6 +144,12 @@ font-size: 15px;
     bottom: -40px;
   white-space: nowrap;
 }
+.placeholderTitle{
+    color: #808080;
+    position: absolute;
+    bottom: -20px;
+  white-space: nowrap;
+}
 
 .thirdSelect{
     height: 35px; 
