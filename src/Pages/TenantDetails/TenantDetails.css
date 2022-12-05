@@ -186,6 +186,7 @@
     font-size: 14px;
     line-height: 21px;
     white-space:nowrap ;
+    cursor: pointer;
     }
     
     .addmoreHeading1{
@@ -198,7 +199,7 @@
     font-size: 14px;
     line-height: 21px;
     white-space:nowrap ;
-    
+    cursor: pointer;
     }
     .selectHeading2{
         height: 30px;

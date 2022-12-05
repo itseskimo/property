@@ -179,9 +179,9 @@ font-size: 15px;
 .calendar{
 position: absolute;
 left: 240px;
-bottom: -100px;
+bottom: -340px;
 border: 1px solid black;
-height: 325px;
+height: 345px;
 z-index: 1;
 }
 
@@ -235,7 +235,6 @@ border-radius: 12px;
     display: flex;
     align-items: center;
     position: relative;
-    
     }
 
     .inputGap h5{
