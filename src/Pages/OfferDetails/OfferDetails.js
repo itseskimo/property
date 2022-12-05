@@ -85,7 +85,7 @@ const OfferDetails = ({active,setActive}) => {
 <div className='offerInput1'>
     <h5>Landlord Ask</h5>
     <div className='firstDiv1'>
-      <input autoFocus className='firstInput1' onChange={(e)=>setlandlordAsk(e.target.value)} required value={landlordAsk}></input>
+      <input autoFocus className='firstInput1' onChange={(e)=>setlandlordAsk(e.target.value)} required value={landlordAsk} placeholder='Per Month'></input>
       <h6 className='firstTitle'>Amount Landlord is asking</h6>
     </div>
     <div  className='secondDiv1'>
@@ -148,7 +148,7 @@ const OfferDetails = ({active,setActive}) => {
 <div className='offerBox1'>
   <h4>Term 1</h4>
   <h6 >Month 1-12</h6>
-  <h4>f</h4>
+  <h4>450000</h4>
 </div>
 <div className='offerBox2'>
   <h4>Term 2</h4>
