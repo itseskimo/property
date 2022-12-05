@@ -161,12 +161,32 @@ const OfferDetails = ({active,setActive}) => {
  <div className='inputGap'>
     <h5>Rent Start Date</h5>
 
-    {openDate && <DateRange editableDateInputs={true}  
+    {openDate && <> 
+     <br></br>
+     <br></br>
+     <br></br>
+     <br></br>  
+     <br></br> 
+     <br></br>
+     <br></br>
+     <br></br>
+     <br></br>
+    
+     
+   
+  
+   
+    
+    <DateRange editableDateInputs={true}  
     onChange={(item)=>setDate([item.selection])} 
     moveRangeOnFirstSelection={false}
     ranges={date}
     className='calendar'
-    />}
+    />
+   
+    
+    </>
+    }
     
 
     <select onClick={()=>setOpenDate(!openDate)}    className='firstSelect1'>
