@@ -81,7 +81,56 @@ padding: 10px;
     color: #808080;
     }
     
+    .select{ 
+        display: none;
+        }
     
+        input[type="file"] {
+        display: none;
+        }
+    
+        .labelIcon{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 17px;
+        }
+        .labelIconn{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 197px;
+        }
+    
+    
+        .inputLabel{
+            cursor: pointer;
+            box-sizing: border-box;
+            position: absolute;
+            left: 620px;
+            height: 44px; 
+            width: 187px;
+            border: 1px solid #082346;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 14px;
+            display: flex;
+            justify-content: flex-start;
+        }
+    
+        .inputLabell{
+            cursor: pointer;
+            box-sizing: border-box;
+            margin-right: 50px;
+            height: 44px;
+            width: 363px;
+            position: absolute;
+            left: 240px;
+            background: #FFFFFF;
+    border: 1px solid #082346;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+        }
     
     /* ----------------------------------- */
     .underLine{

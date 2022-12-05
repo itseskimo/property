@@ -1,6 +1,8 @@
 import React from 'react'
 import './FirmDocumentation.css'
 import FormHeader from '../../Components/FormHeader/FormHeader'
+import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
+
 
 const FirmDocumentation = ({active,setActive}) => {
   
@@ -34,25 +36,31 @@ const FirmDocumentation = ({active,setActive}) => {
      <h6 className='offerSub5'>Enter URL of your Linkedin Profile</h6> 
    </div>
 </div>
+
 <div className='form'>
-   <h5>Visiting Card</h5>
-   <input className='input1' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
-     <div className='offerSubheadings'>
-     <h6 className='offerSub5'>Upload PNG or PDF (Max 25 mb)</h6> 
-   </div>
+    <h5>Visiting Card</h5>
+    <label className='inputLabell'> Upload document
+          <input  className='select' type="file"  name="myfile" accept="image/png, application/pdf"></input>
+          <DriveFolderUploadIcon className='labelIconn'/>
+    </label>
+      <div className='offerSubheadings'>
+      <h6 className='offerSub5'>Upload PNG or PDF (Max 25 mb)</h6> 
+    </div>
 </div>
 
-
-
 <div className='form'>
-   <h5>Pan Card</h5>
-   <input className='input1'></input>
-   <input className='select' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
+    <h5>Pan Card</h5>
+    <input className='input1'></input>
 
-     <div className='offerSubheadings'>
-     <h6 className='offerSub5'>Enter Pan card number</h6>
-     <h6 >Upload PNG or PDF (Max 25 mb)</h6>
-   </div>
+    <label className='inputLabel'> Upload document
+          <input  className='select' type="file"  name="myfile" accept="image/png, application/pdf"></input>
+          <DriveFolderUploadIcon className='labelIcon'/>
+    </label>
+
+      <div className='offerSubheadings'>
+      <h6 className='offerSub5'>Enter Pan card number</h6>
+      <h6 >Upload PNG or PDF (Max 25 mb)</h6>
+    </div>
 </div>
 
 <div className='underLine'></div>

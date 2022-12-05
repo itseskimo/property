@@ -2,7 +2,9 @@ import React,{useEffect} from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './TenantDocumentation.css'
 import { useNavigate } from "react-router-dom";
-  
+import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
+
+
 const TenantDocumentation = ({active,setActive}) => {
   const navigate = useNavigate();
     function nextBtn(){
@@ -46,15 +48,22 @@ const TenantDocumentation = ({active,setActive}) => {
 </div>
 <div className='form'>
     <h5>Visiting Card</h5>
-    <input className='input1' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
+
+    <label className='inputLabell'> Upload document
+          <input  className='select' type="file"  name="myfile" accept="image/png, application/pdf"></input>
+          <DriveFolderUploadIcon className='labelIconn'/>
+    </label>
       <div className='offerSubheadings'>
       <h6 className='offerSub5'>Upload PNG or PDF (Max 25 mb)</h6> 
     </div>
 </div>
 
 <div className='form'>
-    <h5>Passport Size Photo </h5>   
-    <input className='input1' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
+    <h5>Passport Size Photo </h5>
+    <label className='inputLabell'> Upload document
+          <input  className='select' type="file"  name="myfile" accept="image/png, application/pdf"></input>
+          <DriveFolderUploadIcon className='labelIconn'/>
+    </label>   
       <div className='offerSubheadings'>
       <h6 className='offerSub5'>Upload PNG or PDF (Max 25 mb)</h6>   
     </div>
@@ -63,7 +72,10 @@ const TenantDocumentation = ({active,setActive}) => {
 <div className='form'>
     <h5>Pan Card</h5>
     <input className='input1'></input>
-    <input className='select' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
+    <label className='inputLabel'> Upload document
+          <input  className='select' type="file"  name="myfile" accept="image/png, application/pdf"></input>
+          <DriveFolderUploadIcon className='labelIcon'/>
+    </label>
 
       <div className='offerSubheadings'>
       <h6 className='offerSub5'>Enter Pan card number</h6>
@@ -74,7 +86,10 @@ const TenantDocumentation = ({active,setActive}) => {
 <div className='form'>
     <h5>Aadhar Card</h5>
     <input className='input1'></input>
-    <input className='select' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
+    <label className='inputLabel'> Upload document
+          <input  className='select' type="file"  name="myfile" accept="image/png, application/pdf"></input>
+          <DriveFolderUploadIcon className='labelIcon'/>
+    </label>
 
       <div className='offerSubheadings'>
       <h6 className='offerSub6'>Enter Aadhar card number</h6>
@@ -94,7 +109,10 @@ const TenantDocumentation = ({active,setActive}) => {
 </div>
 <div className='form'>
     <h5>Visiting Card</h5>
-    <input className='input1' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
+    <label className='inputLabell'> Upload document
+          <input  className='select' type="file"  name="myfile" accept="image/png, application/pdf"></input>
+          <DriveFolderUploadIcon className='labelIconn'/>
+    </label>
       <div className='offerSubheadings'>
       <h6 className='offerSub5'>Upload PNG or PDF (Max 25 mb)</h6> 
     </div>
@@ -102,7 +120,10 @@ const TenantDocumentation = ({active,setActive}) => {
 
 <div className='form'>
     <h5>Passport Size Photo </h5>   
-    <input className='input1' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
+    <label className='inputLabell'> Upload document
+          <input  className='select' type="file"  name="myfile" accept="image/png, application/pdf"></input>
+          <DriveFolderUploadIcon className='labelIconn'/>
+    </label>
       <div className='offerSubheadings'>
       <h6 className='offerSub5'>Upload PNG or PDF (Max 25 mb)</h6>   
     </div>
@@ -111,7 +132,11 @@ const TenantDocumentation = ({active,setActive}) => {
 <div className='form'>
     <h5>Pan Card</h5>
     <input className='input1'></input>
-    <input className='select' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
+
+    <label className='inputLabel'> Upload document
+          <input  className='select' type="file"  name="myfile" accept="image/png, application/pdf"></input>
+          <DriveFolderUploadIcon className='labelIcon'/>
+    </label>
 
       <div className='offerSubheadings'>
       <h6 className='offerSub5'>Enter Pan card number</h6>
@@ -122,7 +147,11 @@ const TenantDocumentation = ({active,setActive}) => {
 <div className='form'>
     <h5>Aadhar Card</h5>
     <input className='input1'></input>
-    <input className='select' type="file" id="myfile" name="myfile" accept="image/png, application/pdf"></input>
+
+    <label className='inputLabel'> Upload document
+          <input  className='select' type="file"  name="myfile" accept="image/png, application/pdf"></input>
+          <DriveFolderUploadIcon className='labelIcon'/>
+    </label>
 
       <div className='offerSubheadings'>
       <h6 className='offerSub6'>Enter Aadhar card number</h6>
