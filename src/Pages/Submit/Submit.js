@@ -2,6 +2,8 @@ import React,{useEffect} from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './Submit.css'
 import { useNavigate } from "react-router-dom";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 
 const Submit = ({active,setActive}) => {
@@ -70,8 +72,8 @@ const Submit = ({active,setActive}) => {
 
 <div className='button1'>
   <button className='buttonReset'>Reset</button>
-  <button className='buttonMid' onClick={prevBtn}>Previous</button>
-  <button className='buttonContinue'onClick={nextBtn}>Submit</button>
+  <button className='buttonMid' onClick={prevBtn}><ArrowBackIcon/>Previous</button>
+  <button className='buttonContinue'onClick={nextBtn}>Submit<ArrowForwardIcon/></button>
 </div> 
 
 

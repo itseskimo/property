@@ -6,6 +6,8 @@ import { DateRange } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import {format} from 'date-fns'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
 
 const OfferDetails = ({active,setActive}) => {
   const navigate = useNavigate();
@@ -239,7 +241,7 @@ const OfferDetails = ({active,setActive}) => {
 <div className='underLine1'></div>
 <div className='buttonSet'>
   <button className='buttonReset1' onClick={prevBtn}>Reset</button>
-  <button className='buttonContinue1' onClick={nextBtn}>Continue</button>
+  <button className='buttonContinue1' onClick={nextBtn}>Continue <ArrowForwardIcon/></button>
 </div>
     </div>
 

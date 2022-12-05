@@ -2,7 +2,8 @@ import React from 'react'
 import './FirmDocumentation.css'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
-
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const FirmDocumentation = ({active,setActive}) => {
   
@@ -67,8 +68,8 @@ const FirmDocumentation = ({active,setActive}) => {
 
 <div className='button'>
  <button className='buttonReset'>Reset</button>
- <button className='buttonMid' onClick={prevBtn}>Previous</button>
- <button className='buttonContinue' onClick={nextBtn}>Continue</button>
+ <button className='buttonMid' onClick={prevBtn}><ArrowBackIcon/>Previous</button>
+ <button className='buttonContinue' onClick={nextBtn}>Continue <ArrowForwardIcon/></button>
 </div> 
 
 

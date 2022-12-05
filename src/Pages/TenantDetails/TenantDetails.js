@@ -2,6 +2,8 @@ import React,{useEffect} from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './TenantDetails.css'
 import { useNavigate } from "react-router-dom";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const TenantDetails = ({active,setActive}) => {
 
@@ -196,8 +198,8 @@ useEffect(() => {
 
 <div className='button'>
   <button className='buttonReset'>Reset</button>
-  <button className='buttonMid' onClick={prevBtn}>Previous</button>
-  <button className='buttonContinue' onClick={nextBtn}>Continue</button>
+  <button className='buttonMid' onClick={prevBtn}><ArrowBackIcon/>Previous</button>
+  <button className='buttonContinue' onClick={nextBtn}>Continue <ArrowForwardIcon/></button>
 </div> 
 
 

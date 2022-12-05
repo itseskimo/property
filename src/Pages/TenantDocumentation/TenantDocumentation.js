@@ -3,7 +3,8 @@ import FormHeader from '../../Components/FormHeader/FormHeader'
 import './TenantDocumentation.css'
 import { useNavigate } from "react-router-dom";
 import DriveFolderUploadIcon from '@mui/icons-material/DriveFolderUpload';
-
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const TenantDocumentation = ({active,setActive}) => {
   const navigate = useNavigate();
@@ -169,8 +170,8 @@ const TenantDocumentation = ({active,setActive}) => {
 
 <div className='button'>
   <button className='buttonReset'>Reset</button>
-  <button className='buttonMid' onClick={prevBtn}>Previous</button>
-  <button className='buttonContinue' onClick={nextBtn}>Continue</button>
+  <button className='buttonMid' onClick={prevBtn}> <ArrowBackIcon/>Previous</button>
+  <button className='buttonContinue' onClick={nextBtn}>Continue <ArrowForwardIcon/></button>
 </div> 
 
 

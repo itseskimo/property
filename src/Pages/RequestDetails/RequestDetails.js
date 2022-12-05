@@ -2,6 +2,10 @@ import React from 'react'
 import FormHeader from '../../Components/FormHeader/FormHeader'
 import './RequestDetails.css'
 import { useNavigate } from "react-router-dom";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
+
 const RequestDetails = ({active,setActive}) => {
   const navigate = useNavigate();
   function nextBtn(){
@@ -57,8 +61,8 @@ const RequestDetails = ({active,setActive}) => {
 
 <div className='button'>
   <button className='buttonReset'>Reset</button>
-  <button className='buttonMid' onClick={prevBtn}>Previous</button>
-  <button className='buttonContinue' onClick={nextBtn}>Continue</button>
+  <button className='buttonMid' onClick={prevBtn}><ArrowBackIcon/>Previous</button>
+  <button className='buttonContinue' onClick={nextBtn}>Continue <ArrowForwardIcon/></button>
 </div> 
 
 
