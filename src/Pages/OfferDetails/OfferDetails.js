@@ -69,7 +69,13 @@ const OfferDetails = ({active,setActive}) => {
         <h5  className='properties1'>Oberoi Splener</h5>
         <h6 className='lineHeight'>Jogeshwari, Mumbai, 400076</h6>
         <br ></br>
-        <h6 className='lineHeight1'>Landlord Details  <span className='offerVerify'>Title Verified</span></h6>
+
+        <h6 className='lineHeight1'>Landlord Details 
+        <img className="verifyImage"
+          src="https://www.pngitem.com/pimgs/b/34-343419_vote-check-mark-png.png"
+          alt="pic"
+        /> <span className='offerVerify'>Title Verified</span></h6>
+        
         <h6 className='subHeading'>Owner 1- Akkhi kumr</h6>
         <h6 className='subHeading'>Owner 2- Akkhi kumar</h6>
         </div>
@@ -210,9 +216,8 @@ const OfferDetails = ({active,setActive}) => {
   <br></br>
   <br></br>
   <br></br>
-        
       </>  
-        }
+}
 <div className='offerInput1'>
     <h5>Lock In Period</h5>
     <select className='firstSelet1'>
