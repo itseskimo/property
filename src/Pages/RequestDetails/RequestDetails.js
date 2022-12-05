@@ -61,8 +61,8 @@ const RequestDetails = ({active,setActive}) => {
 
 <div className='button'>
   <button className='buttonReset'>Reset</button>
-  <button className='buttonMid' onClick={prevBtn}><ArrowBackIcon/>Previous</button>
-  <button className='buttonContinue' onClick={nextBtn}>Continue <ArrowForwardIcon/></button>
+  <button className='buttonMid' onClick={prevBtn}><ArrowBackIcon className='right'/>Previous</button>
+  <button className='buttonContinue' onClick={nextBtn}>Continue <ArrowForwardIcon className='left'/></button>
 </div> 
 
 

@@ -72,8 +72,8 @@ const Submit = ({active,setActive}) => {
 
 <div className='button1'>
   <button className='buttonReset'>Reset</button>
-  <button className='buttonMid' onClick={prevBtn}><ArrowBackIcon/>Previous</button>
-  <button className='buttonContinue'onClick={nextBtn}>Submit<ArrowForwardIcon/></button>
+  <button className='buttonMid' onClick={prevBtn}><ArrowBackIcon className='right'/>Previous</button>
+  <button className='buttonContinue'onClick={nextBtn}>Submit<ArrowForwardIcon className='left'/></button>
 </div> 
 
 

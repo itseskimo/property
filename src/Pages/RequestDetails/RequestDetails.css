@@ -41,7 +41,13 @@ margin-bottom: 20px;
     font-size: 15px;
     }
 
-    
+    .left{
+        margin-left: 20px;
+        }
+        
+        .right{
+            margin-right: 20px;
+        }
         
 .requestheadings{
 color: #808080;

@@ -241,7 +241,7 @@ const OfferDetails = ({active,setActive}) => {
 <div className='underLine1'></div>
 <div className='buttonSet'>
   <button className='buttonReset1' onClick={prevBtn}>Reset</button>
-  <button className='buttonContinue1' onClick={nextBtn}>Continue <ArrowForwardIcon/></button>
+  <button className='buttonContinue1' onClick={nextBtn}>Continue <ArrowForwardIcon className='left'/></button>
 </div>
     </div>
 
