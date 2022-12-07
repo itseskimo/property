@@ -70,7 +70,6 @@ const OfferDetails = ({active,setActive}) => {
         <div className='offerProperties'>
         <h5  className='properties1'>Oberoi Splener</h5>
         <h6 className='lineHeight'>Jogeshwari, Mumbai, 400076</h6>
-        <br ></br>
 
         <h6 className='lineHeight1'>Landlord Details 
         <img className="verifyImage"

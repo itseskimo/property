@@ -30,14 +30,12 @@ display: flex;
 
 .offerProperties{
 margin-left: 40px;
-line-height: 1px;
-margin-top: -13px;
+line-height: 0px;
 }
 
 .properties1{
     font-weight: 650;
-    font-size: 16px;
-    line-height: -19px;
+    font-size: 14px;
     color: #121212;
     }
 
@@ -45,28 +43,30 @@ margin-top: -13px;
     color: #484848;
     margin-bottom: 5px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .lineHeight1{
     font-weight: 650;
-    font-size: 16px;
+    font-size: 14px;
     color: #000000;
 }
 
 .subHeading{
 font-weight: 600;
-font-size: 16px;
+font-size: 15px;
 color: #484848;
 }
 
 .offerVerify{
     color: #42A54C;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .verifyImage{
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     object-fit: contain;
     margin-left: 15px;
 }
