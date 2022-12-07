@@ -12,10 +12,13 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const OfferDetails = ({active,setActive}) => {
   const navigate = useNavigate();
 
-  const [userType, setUserType] = useState('CUSTOMER');
+  const [userType, setUserType] = useState('');
   const [landlordAsk, setlandlordAsk] = useState('');
   const [securitydeposit, setSecurityDeposit] = useState('');
   const [rentOffered, setRentOffered] = useState('');
+  const [depositOffered, setDepositOffered] = useState('');
+  const [term, setTerm] = useState('');
+  console.log(term)
   const[openDate,setOpenDate]=useState(false)
   const [date, setDate] = useState([{
     startDate: new Date(),
@@ -103,16 +106,24 @@ const OfferDetails = ({active,setActive}) => {
       <h6 className='firstTitle'>Enter your offer of monthly rent</h6>
     </div>
     <div  className='secondDiv1'>
-      <input className='secondInput1'></input>
+      <input className='secondInput1' onChange={(e)=>setDepositOffered(e.target.value)} required value={depositOffered}></input>
       <h6 className='firstTitle'>Deposit Offered</h6>
     </div>
 
 
     <div className='thirdDiv1'>
-    <select className='thirdSelect'>
+    <select className='thirdSelect' onChange={(e)=>setTerm(e.target.value)} required value={term}>
                 <option>Select Term</option>
-                <option>1</option>
-                <option>2</option>
+                <option value={'6 Months'}>6 Months</option>
+                <option value={'12 Months'}>12 Months</option>
+                <option value={'18 Months'}>18 Months</option>
+                <option value={'24 Months'}>24 Months</option>
+                <option value={'30 Months'}>30 Months</option>
+                <option value={'36 Months'}>36 Months</option>
+                <option value={'42 Months'}>42 Months</option>
+                <option value={'48 Months'}>48 Months</option>
+                <option value={'54 Months'}>54 Months</option>
+                <option value={'60 Months'}>60 Months</option>
             </select>
        <h6 className='firstTitle'>Enter the contract period</h6> 
       </div>

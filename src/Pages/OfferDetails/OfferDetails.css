@@ -54,7 +54,7 @@ line-height: 0px;
 
 .subHeading{
 font-weight: 600;
-font-size: 15px;
+font-size: 14px;
 color: #484848;
 }
 
@@ -105,12 +105,12 @@ padding-right: 150px;
 
 .secondDiv1{
     position: absolute;
-    left: 455px;    
+    left: 475px;    
 }
 
 .thirdDiv1{
     position: absolute;
-    left: 670px;   
+    left: 710px;   
 }
 .forthDiv1{
     position: absolute;
@@ -143,6 +143,7 @@ font-size: 15px;
     position: absolute;
     bottom: -40px;
   white-space: nowrap;
+  font-size: 10px;
 }
 .placeholderTitle{
     color: #808080;
