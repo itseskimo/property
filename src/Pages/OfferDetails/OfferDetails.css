@@ -149,8 +149,12 @@ font-size: 15px;
 .placeholderTitle{
     color: #808080;
     position: absolute;
-    bottom: -20px;
+    bottom: -17px;
+    left: 128px;
+    font-weight: 400;
   white-space: nowrap;
+  font-size: 12px;
+  z-index: 1;
 }
 
 .thirdSelect{

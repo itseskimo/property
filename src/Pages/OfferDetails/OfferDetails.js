@@ -91,8 +91,9 @@ console.log(term)
 <div className='offerInput1'>
     <h5>Landlord Ask</h5>
     <div className='firstDiv1'>
-      <input autoFocus className='firstInput1' onChange={(e)=>setlandlordAsk(e.target.value)} required value={landlordAsk} placeholder='Per Month'></input>
+      <input autoFocus className='firstInput1' onChange={(e)=>setlandlordAsk(e.target.value)} required value={landlordAsk}></input>
       <h6 className='firstTitle'>Amount Landlord is asking</h6>
+      <h6 className='placeholderTitle'>Per Month</h6>
     </div>
     <div  className='secondDiv1'>
       <input className='secondInput1' onChange={(e)=>setSecurityDeposit(e.target.value)} required value={securitydeposit}></input>
