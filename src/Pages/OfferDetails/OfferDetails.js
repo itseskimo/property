@@ -228,21 +228,21 @@ const OfferDetails = ({active,setActive}) => {
   <br></br>
   <br></br>
   <br></br>
+  <br></br>
+  <br></br>
       </>  
 }
 <div className='offerInput1'>
     <h5>Lock In Period</h5>
     <select className='firstSelet1'>
                 <option>No.of Months</option>
-                <option>1</option>
-                <option>2</option>
+                <option value={'1'}>1</option>
             </select>
 
    <h5 className='offerTitle'>Notice Period</h5>
    <select className='thirdSelect1' onChange={(e)=>setUserType(e.target.value)} required value={userType}>
-                <option value={'days'}>No.of Days</option>
-                <option value={'1'}>1</option>
-                <option value={'2'}>2</option>
+                <option>No.of Days</option>
+                <option value={'12'}>12</option>
             </select>
 </div>
 
