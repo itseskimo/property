@@ -18,7 +18,9 @@ const OfferDetails = ({active,setActive}) => {
   const [rentOffered, setRentOffered] = useState('');
   const [depositOffered, setDepositOffered] = useState('');
   const [term, setTerm] = useState('');
-  console.log(term)
+  const [rentEscalationType, setRentEscalationType] = useState('');
+  const [rentEscalationPercentage, setRentEscalationPercentage] = useState('');
+console.log(term)
   const[openDate,setOpenDate]=useState(false)
   const [date, setDate] = useState([{
     startDate: new Date(),
@@ -114,16 +116,16 @@ const OfferDetails = ({active,setActive}) => {
     <div className='thirdDiv1'>
     <select className='thirdSelect' onChange={(e)=>setTerm(e.target.value)} required value={term}>
                 <option>Select Term</option>
-                <option value={'6 Months'}>6 Months</option>
-                <option value={'12 Months'}>12 Months</option>
-                <option value={'18 Months'}>18 Months</option>
-                <option value={'24 Months'}>24 Months</option>
-                <option value={'30 Months'}>30 Months</option>
-                <option value={'36 Months'}>36 Months</option>
-                <option value={'42 Months'}>42 Months</option>
-                <option value={'48 Months'}>48 Months</option>
-                <option value={'54 Months'}>54 Months</option>
-                <option value={'60 Months'}>60 Months</option>
+                <option>6 Months</option>
+                <option>12 Months</option>
+                <option>18 Months</option>
+                <option>24 Months</option>
+                <option>30 Months</option>
+                <option>36 Months</option>
+                <option>42 Months</option>
+                <option>48 Months</option>
+                <option>54 Months</option>
+                <option>60 Months</option>
             </select>
        <h6 className='firstTitle'>Enter the contract period</h6> 
       </div>
@@ -134,8 +136,8 @@ const OfferDetails = ({active,setActive}) => {
 <div className='offerInput1'>
     <h5>Rent Escalation</h5>
     <div className='firstDiv1'>
-    <select className='firstSelect'>
-      <option>Flat</option>
+    <select className='firstSelect' disabled={rentEscalationPercentage.includes('%') ? true : false}    onChange={(e)=>setRentEscalationType(e.target.value)} required value={rentEscalationType}>
+      <option value={'Flat'}>Flat</option>
       <option>1</option>
       <option>2</option>
     </select>
@@ -148,10 +150,12 @@ const OfferDetails = ({active,setActive}) => {
     </div>
 
     <div className='forthDiv1'>
-      <select className='secondSelect'>
+      <select className='secondSelect' disabled={rentEscalationType === 'Flat' ? true : false} onChange={(e)=>setRentEscalationPercentage(e.target.value)} value={rentEscalationPercentage}>
       <option>5%</option>
       <option>10%</option>
       <option>12%</option>
+      <option>12</option>
+      <option>18</option>
     </select>
     <h6 className='firstTitle'>Enter your offer in monthly rent</h6>
     </div>
