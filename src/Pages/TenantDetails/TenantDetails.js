@@ -4,8 +4,12 @@ import './TenantDetails.css'
 import { useNavigate } from "react-router-dom";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { useState } from 'react';
 
 const TenantDetails = ({active,setActive}) => {
+
+const[occupants,setOccupants]=useState(false)
+
 
     const navigate = useNavigate();
 
@@ -48,7 +52,7 @@ useEffect(() => {
 <div className='lessGap'>
     <h5>Type of Lease</h5>
     <div className='firstDiv'>
-       <select className='firstSelect'>
+       <select className='selectWidth'>
         <option>Select Option</option>
         <option>1</option>
         <option>2</option>
@@ -60,11 +64,11 @@ useEffect(() => {
 <div className='offerInput2'>
     <h5>Company</h5>
     <div className='firstDiv'>
-    <input className='firstInput'></input>
+    <input className='firstInput' placeholder='Company Name'></input>
     <h6 className='firstTitle'>Enter Company Name</h6>
     </div>
     <div  className='secondDiv'>
-       <select className='firstSelect'>
+       <select className='selectWidth'>
                 <option>Select Term</option>
                 <option>1</option>
                 <option>2</option>
@@ -84,11 +88,11 @@ useEffect(() => {
 <div className='offerInput2'>
     <h5>Enter Details</h5>
     <div className='firstDiv'>
-    <input className='firstInput'></input>
+    <input className='firstInput' placeholder='Full Name'></input>
     <h6 className='firstTitle'>Enter your offer of monthly rent</h6>
     </div>
     <div className='secondDiv'> 
-            <select className='firstSelect'>
+            <select className='selectWidth'>
                 <option>Select Type</option>
                 <option>1</option>
                 <option>2</option>
@@ -111,12 +115,12 @@ useEffect(() => {
 <div className='rowGap'>
     <h5>Enter Employer Details</h5>
     <div className='firstDiv'>
-      <input className='thirdInput'></input>  
+      <input className='thirdInput2' placeholder='Job Title'></input>  
       <h6 className='firstTitle'>Enter Job Title</h6>
     </div>
     
     <div className='thirdDiv'>
-         <input className='thirdInput'></input>
+         <input className='thirdInput3' placeholder='Employer Name'></input>
         <h6 className='firstTitle'>Enter Employer Title</h6>
     </div>
    
@@ -125,19 +129,66 @@ useEffect(() => {
 
 <div className='offerInput'>
     <h5>Reason for Rent</h5>
-    <input className='input4'></input>
+    <input className='input4' placeholder='Reason'></input>
 </div>
 
 <div className='offerInput'>
     <h5>Details Of Occupants</h5>
     
     <div className='firstDiv'>
-    <input className='firstInput'></input>
+    <input className='firstInput' placeholder='Full Name'></input>
     <h6 className='firstTitle'>Enter occupation's name</h6>
     </div>
 
     <div className='secondDiv'> 
-            <select className='firstSelect'>
+            <select className='selectWidth'>
+                <option>Select Type</option>
+                <option>1</option>
+                <option>2</option>
+            </select>
+         <h6 className='firstTitle'>Relationship</h6>   
+   </div>
+
+      <div className='offerSubheadings'>
+     
+<div>
+      <input className='selectHeadi'></input>
+      <h6 className='selectHeading1'>Enter age</h6>
+      </div>
+      <div className='forthDiv'>
+            <select className='selectHead' >
+                <option>Occupation</option>
+                <option>1</option>
+                <option>2</option>
+            </select>
+        <h6 className='firstTitle'>Select the occupation</h6>    
+      </div>
+      
+      {!occupants && <h6 className='addmoreText' onClick={()=>setOccupants(!occupants)}>Add more Occupants +</h6>}
+      
+    </div>
+</div>
+
+{occupants && <>
+  <br></br>
+  <br></br>
+  <br></br>
+  </>  
+}
+
+
+
+
+{occupants && <div className='offerInput'>
+    <h5>Details Of Occupants</h5>
+    
+    <div className='firstDiv'>
+    <input className='firstInput' placeholder='Full Name'></input>
+    <h6 className='firstTitle'>Enter occupation's name</h6>
+    </div>
+
+    <div className='secondDiv'> 
+            <select className='selectWidth'>
                 <option>Select Type</option>
                 <option>1</option>
                 <option>2</option>
@@ -161,23 +212,29 @@ useEffect(() => {
       </div>
       
       
-      <h6 className='addmoreText'>Enter age +</h6>
+      <h6 className='addmoreText' onClick={()=>setOccupants(!occupants)}>Add more Occupants +</h6>
       
     </div>
-</div>
+</div>}
+
+
+
+
+
+
 
 
 <div className='largeLineHeight'>
     <h5>Do you have any Pets?</h5>
-    <button className='select1'>Yes</button>
-    <button className='select2'>No</button>
+    <button className='tenantButton1'>Yes</button>
+    <button className='tenantButton2'>No</button>
 </div>
 
 
 <div className='lessGap'>
     <h5>Enter Pet Details</h5>
     <div className='firstDiv'>
-       <select className='firstSelect'>
+       <select className='selectWidth'>
         <option>Select Option</option>
         <option>1</option>
         <option>2</option>

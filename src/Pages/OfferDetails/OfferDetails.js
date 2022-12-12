@@ -7,7 +7,7 @@ import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import {format} from 'date-fns'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 const OfferDetails = ({active,setActive}) => {
   const navigate = useNavigate();
@@ -20,6 +20,7 @@ const OfferDetails = ({active,setActive}) => {
   const [term, setTerm] = useState('');
   const [rentEscalationType, setRentEscalationType] = useState('');
   const [rentEscalationPercentage, setRentEscalationPercentage] = useState('');
+  const [rentEscalationValue, setRentEscalationValue] = useState('');
 console.log(term)
   const[openDate,setOpenDate]=useState(false)
   const [date, setDate] = useState([{
@@ -117,16 +118,16 @@ console.log(term)
     <div className='thirdDiv1'>
     <select className='thirdSelect' onChange={(e)=>setTerm(e.target.value)} required value={term}>
                 <option>Select Term</option>
-                <option>6 Months</option>
-                <option>12 Months</option>
-                <option>18 Months</option>
-                <option>24 Months</option>
-                <option>30 Months</option>
-                <option>36 Months</option>
-                <option>42 Months</option>
-                <option>48 Months</option>
-                <option>54 Months</option>
-                <option>60 Months</option>
+                <option>6 </option>
+                <option>12 </option>
+                <option>18 </option>
+                <option>24 </option>
+                <option>30 </option>
+                <option>36 </option>
+                <option>42 </option>
+                <option>48 </option>
+                <option>54 </option>
+                <option>60 </option>
             </select>
        <h6 className='firstTitle'>Enter the contract period</h6> 
       </div>
@@ -137,12 +138,11 @@ console.log(term)
 <div className='offerInput1'>
     <h5>Rent Escalation</h5>
     <div className='firstDiv1'>
-    <select className='firstSelect' disabled={rentEscalationPercentage.includes('%') ? true : false}    onChange={(e)=>setRentEscalationType(e.target.value)} required value={rentEscalationType}>
-      <option value={'Flat'}>Flat</option>
+    <select className='firstSelect' disabled={rentEscalationPercentage.includes('%') || rentEscalationValue.includes('%') ? true : false}    onChange={(e)=>setRentEscalationType(e.target.value)} required value={rentEscalationType}>
+      <option>Flat</option>
       <option>1</option>
-      <option>2</option>
     </select>
-      <input className='thirdInput1'></input>
+      <input className='thirdInput1' onChange={(e)=>setRentEscalationValue(e.target.value)} value={rentEscalationValue}></input>
        <h6 className='firstTitle'>Choose a value to showcase amount</h6>
     </div>
 
@@ -156,27 +156,25 @@ console.log(term)
       <option>10%</option>
       <option>12%</option>
       <option>12</option>
-      <option>18</option>
     </select>
     <h6 className='firstTitle'>Enter your offer in monthly rent</h6>
     </div>
     
-{/* {OfferTerm.map((item)=>{return})} */}
 <div className='offerBox1'>
-  <h4>Term 1</h4>
-  <h6 >Month 1-12</h6>
-  <h4>450000</h4>
+  <h4 className='termTitle'>{`Term ${term/6}`}</h4>
+  <h6 className='termInterval'>{`Month ${term-6}-${term}`}</h6>
+  <h4 className='termCost'> {`${450000 + 10000 * term/6}`}</h4>
 </div>
-<div className='offerBox2'>
-  <h4>Term 2</h4>
-  <h6 >Month 13-24</h6>
-  <h4>₹460000</h4>
+{/* <div className='offerBox2'>
+  <h4 className='termTitle'>Term 2</h4>
+  <h6 className='termInterval'>Month 13-24</h6>
+  <h4 className='termCost'>₹460000</h4>
 </div>
 <div className='offerBox3'>
-  <h4>Term 3</h4>
-  <h6 >Month 13-24</h6>
-  <h4>₹470000</h4>
-</div>
+  <h4 className='termTitle'>Term 3</h4>
+  <h6 className='termInterval'>Month 13-24</h6>
+  <h4 className='termCost'>₹470000</h4>
+</div> */}
 
 </div>
 
@@ -193,30 +191,11 @@ console.log(term)
     />
     }
     
-
-    <select onClick={()=>setOpenDate(!openDate)}    className='firstSelect1'>
-                <option>{`${format(date[0].startDate, 'dd')}`}</option>
-                {/* <option>1</option>
-                <option>2</option> */}
-            </select>
-    <select className='forthSelect'>
-                <option>{`${format(date[0].startDate, 'MM')}`}</option>
-                <option>1</option>
-                <option>2</option>
-            </select>
-    <select className='fifthSelect'>
-                <option>{`${format(date[0].startDate, 'yyyy')}`}</option>
-                <option>1</option>
-                <option>2</option>
-            </select>
-   <h5 className='offerTitle'>Monthly Due Date</h5>
-
-   <select className='sixthInput'>
-                <option>{`${format(date[0].endDate, 'dd')}`}</option>
-                <option>1</option>
-                <option>2</option>
-            </select>
-</div>
+    <div onClick={()=>setOpenDate(!openDate)}  className='firstSelect1'  >
+      <CalendarMonthIcon className='calendarIcon'/>
+    <span className='calendarDate'>{`${format(date[0].startDate, "MM/dd/yyyy")} to ${format(date[0].endDate,"MM/dd/yyyy")}`}</span>            
+    </div>
+    </div>
 
 {openDate && <>
   <br></br>

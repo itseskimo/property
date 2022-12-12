@@ -37,11 +37,11 @@
     
     .thirdDiv{
         position: absolute;
-        left: 380px;   
+        left: 460px !important;   
     }
     .forthDiv{
         position: absolute;
-        left: 210px;
+        left: 110px !important;
         bottom: -33px; 
     }
     
@@ -56,11 +56,15 @@
     font-size: 15px;
     }
     
-    .thirdInput{
+    .thirdInput2{
         height: 30px;
-        width: 100px;
+        width: 179px  ;
         font-size: 15px;
-
+        }
+    .thirdInput3{
+        height: 30px;
+        width: 234px ;
+        font-size: 15px;
         }
     
     .firstTitle{
@@ -71,9 +75,10 @@
     }
     
   
-    .firstSelect{
+    .selectWidth{
         margin-right: 30px;
         height: 36px;
+        width: 141px;
     }
     
     .firstSelect1{
@@ -135,11 +140,18 @@
     }
     
     .select1{
-        margin-right: 50px;
-        height: 30px;
+        /* margin-right: 200px; */
+        height: 35px;
         position: absolute;
         left: 240px;
-        width: 60px;
+        width: 87px;
+    }
+    .tenantButton1{
+        /* margin-right: 200px; */
+        height: 35px;
+        position: absolute;
+        left: 240px;
+        width: 52px;
     }
     
     .selectHeading{
@@ -147,6 +159,7 @@
         position: absolute;
         left: 0;
         bottom: -33px; 
+        width: 181px;
     }
     
     .selectHeadi{
@@ -155,7 +168,7 @@
         left: 0;
         bottom: -33px; 
         font-size: 15px;
-
+width: 70px;
     }
 
     
@@ -218,15 +231,25 @@
     
     
     .select2{
-        margin-right: 50px;
-        height: 30px;
+        margin-left: 40px;
+        height: 35px;
+        /* position: absolute;
+        left: 480px; */
+        background: #082346;
+border: 1px solid #082346;
+border-radius: 4px;
+color: #FFFFFF;
+width: 87px;
+    }
+    .tenantButton2{
+        height: 35px;
         position: absolute;
         left: 320px;
         background: #082346;
 border: 1px solid #082346;
 border-radius: 4px;
 color: #FFFFFF;
-width: 60px;
+width: 52px;
     }
     
     .input5{
@@ -256,7 +279,7 @@ width: 60px;
     .input4{
         margin-right: 50px;
         height: 85px;
-        width: 504px;
+        width: 514px;
         position: absolute;
         left: 240px;
         font-size: 15px;
