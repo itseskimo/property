@@ -21,7 +21,8 @@ const OfferDetails = ({active,setActive}) => {
   const [rentEscalationType, setRentEscalationType] = useState('');
   const [rentEscalationPercentage, setRentEscalationPercentage] = useState('');
   const [rentEscalationValue, setRentEscalationValue] = useState('');
-console.log(term)
+  const [calendarVisible, setCalendarVisible] = useState(false);
+
   const[openDate,setOpenDate]=useState(false)
   const [date, setDate] = useState([{
     startDate: new Date(),
@@ -138,7 +139,9 @@ console.log(term)
 <div className='offerInput1'>
     <h5>Rent Escalation</h5>
     <div className='firstDiv1'>
-    <select className='firstSelect' disabled={rentEscalationPercentage.includes('%') || rentEscalationValue.includes('%') ? true : false}    onChange={(e)=>setRentEscalationType(e.target.value)} required value={rentEscalationType}>
+    <select className='firstSelect' disabled={rentEscalationPercentage.includes('%') ? true : false}    
+    onChange={(e)=>setRentEscalationType(e.target.value)} required value={rentEscalationType}
+    onClick={()=>setCalendarVisible(!calendarVisible)}>
       <option>Flat</option>
       <option>1</option>
     </select>
@@ -160,11 +163,12 @@ console.log(term)
     <h6 className='firstTitle'>Enter your offer in monthly rent</h6>
     </div>
     
-<div className='offerBox1'>
+    {calendarVisible && <div className='offerBox1'>
   <h4 className='termTitle'>{`Term ${term/6}`}</h4>
   <h6 className='termInterval'>{`Month ${term-6}-${term}`}</h6>
   <h4 className='termCost'> {`${450000 + 10000 * term/6}`}</h4>
-</div>
+</div>}
+
 {/* <div className='offerBox2'>
   <h4 className='termTitle'>Term 2</h4>
   <h6 className='termInterval'>Month 13-24</h6>
@@ -177,9 +181,17 @@ console.log(term)
 </div> */}
 
 </div>
+{calendarVisible && <>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+</>}
 
-
- <div className='inputGap'>
+ <div className='offerInput1'>
     <h5>Rent Start Date</h5>
 
     {openDate && 
