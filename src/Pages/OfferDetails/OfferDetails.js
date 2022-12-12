@@ -143,7 +143,7 @@ const OfferDetails = ({active,setActive}) => {
     onChange={(e)=>setRentEscalationType(e.target.value)} required value={rentEscalationType}
     onClick={()=>setCalendarVisible(!calendarVisible)}>
       <option>Flat</option>
-      <option>1</option>
+      <option>House</option>
     </select>
       <input className='thirdInput1' onChange={(e)=>setRentEscalationValue(e.target.value)} value={rentEscalationValue}></input>
        <h6 className='firstTitle'>Choose a value to showcase amount</h6>
