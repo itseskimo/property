@@ -84,8 +84,8 @@ const OfferDetails = ({active,setActive}) => {
           alt="pic"
         /> <span className='offerVerify'>Title Verified</span></h6>
         
-        <h6 className='subHeading'>Owner 1- Akkhi kumr</h6>
-        <h6 className='subHeading'>Owner 2- Akkhi kumar</h6>
+        <h6 className='subHeading'><span className='subTitle'>Owner 1</span>   - Akkhi kumr</h6>
+        <h6 className='subHeading'><span className='subTitle'>Owner 2</span>   - Akkhi kumar</h6>
         </div>
     </div>
 
