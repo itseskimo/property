@@ -198,13 +198,14 @@ width: 144px;
 .calendarIcon{
 display: flex;
 align-items: flex-start;
-
+cursor: pointer;
 margin-right: 10px;
 }
 .calendarDate{
-    /* color: #999999; */
+    color: #999999;
     font-size: 14px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .firstSelet1{
