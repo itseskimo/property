@@ -22,7 +22,7 @@ const OfferDetails = ({active,setActive}) => {
   const [rentEscalationPercentage, setRentEscalationPercentage] = useState('');
   const [rentEscalationValue, setRentEscalationValue] = useState('');
   const [calendarVisible, setCalendarVisible] = useState(false);
-
+console.log(term)
   const[openDate,setOpenDate]=useState(false)
   const [date, setDate] = useState([{
     startDate: new Date(),
@@ -163,11 +163,30 @@ const OfferDetails = ({active,setActive}) => {
     <h6 className='firstTitle'>Enter your offer in monthly rent</h6>
     </div>
     
-    {calendarVisible && <div className='offerBox1'>
+  {calendarVisible && 
+
+  <>
+  {  term==='' || term==='Select Term'   ?  
+  <div className='offerBox1'>
+  <h4 className='termTitle'>{`Term 1`}</h4>
+  <h6 className='termInterval'>{`Month 0-6`}</h6>
+  <h4 className='termCost'> {`450000`}</h4>
+  </div>
+  :
+  <div className='offerBox1'>
   <h4 className='termTitle'>{`Term ${term/6}`}</h4>
   <h6 className='termInterval'>{`Month ${term-6}-${term}`}</h6>
-  <h4 className='termCost'> {`${450000 + 10000 * term/6}`}</h4>
-</div>}
+  <h4 className='termCost'> {`${440000 + 10000 * term/6}`}</h4>
+  </div>
+}
+</>
+  
+  //  <div className='offerBox1'>
+  // <h4 className='termTitle'>{`Term ${term/6}`}</h4>
+  // <h6 className='termInterval'>{`Month ${term-6}-${term}`}</h6>
+  // <h4 className='termCost'> {`${450000 + 10000 * term/6}`}</h4>
+  // </div>
+}
 
 {/* <div className='offerBox2'>
   <h4 className='termTitle'>Term 2</h4>
