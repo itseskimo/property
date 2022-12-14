@@ -141,7 +141,7 @@
     
     .select1{
         /* margin-right: 200px; */
-        height: 35px;
+        height: 35px !important;
         position: absolute;
         left: 240px;
         width: 87px;
@@ -232,7 +232,7 @@ width: 70px;
     
     .select2{
         margin-left: 40px;
-        height: 35px;
+        height: 35px !important;
         /* position: absolute;
         left: 480px; */
         background: #082346;

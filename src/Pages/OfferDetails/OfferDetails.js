@@ -164,7 +164,6 @@ console.log(term)
     </div>
     
   {calendarVisible && 
-
   <>
   {  term==='' || term==='Select Term'   ?  
   <div className='offerBox1'>
@@ -180,12 +179,6 @@ console.log(term)
   </div>
 }
 </>
-  
-  //  <div className='offerBox1'>
-  // <h4 className='termTitle'>{`Term ${term/6}`}</h4>
-  // <h6 className='termInterval'>{`Month ${term-6}-${term}`}</h6>
-  // <h4 className='termCost'> {`${450000 + 10000 * term/6}`}</h4>
-  // </div>
 }
 
 {/* <div className='offerBox2'>
